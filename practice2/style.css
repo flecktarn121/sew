@@ -123,3 +123,8 @@ body {
     background-position: right;
     background-color: gray
 }
+
+img {
+    width: auto;
+    float: left;
+}
