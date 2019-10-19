@@ -38,7 +38,7 @@ A continuación se exponen y explican los resultados de las herramientas de veri
 
 Los html se han sometido a dicha herramienta, dando todos 0 errores y advertencias.
 
-![Resultado del validador de html del w3c](validator.png){height=350px}
+![Resultado del validador de html del w3c](pictures/validator.png){height=350px}
 
 ## TAW
 
@@ -52,14 +52,14 @@ Estas son:
 - Páginas titulas: todas las páginas poseen el título del sitio más uno propio que describe el contenido del documento en particular
 - Encabezado y etiquetas: los encabezados son por sí mismos descriptivos del contenido de la etiqueta que encabezan.
 
-![Resultado de la herramienta TAW](taw.png){height=250px}
+![Resultado de la herramienta TAW](pictures/taw.png){height=250px}
 
 ## WAVE
 
 Como puede observarse en la figura 3, esta herramienta también arroja advertencias.
 En este caso están relacionadas con el uso del `tabindex` y los atajos de teclado, dos elementos que son obligatorios para la práctica, y por ende no se puede prescindir de ellos.
 
-![Resultados de la herramienta WAVE](wave.png){height=400px}
+![Resultados de la herramienta WAVE](pictures/wave.png){height=400px}
 
 ## Achecker
 
@@ -67,11 +67,11 @@ En este caso, la herramienta sí arroja un error como tal (ver figura 4).
 Dicho error hace referencia al uso de la etiqueta `<i>`, la cual no se traduce bien a intérpretes textuales.
 Recomiendo el uso de `<strong>` o `<em>`, siendo esta última la que se ha escogido para subsanar el error.
 
-![Resultados de la herramienta achecker](achecker.png){height=400px}
+![Resultados de la herramienta achecker](pictures/achecker.png){height=400px}
 
 ## Google Mobile-friendly
 
 Al tratarse de un sitio web con el marcado adecuado y con un CSS muy básico, la página no da ningún problema a la hora de funcionar en un dispositivo móvil.
 La advertencia que se puede apreciar en la figura uno es devida al código del icono del w3c.
 
-![Resultados del test de adaptabilidad móvil de Google](google.png){height=300px}
+![Resultados del test de adaptabilidad móvil de Google](pictures/google.png){height=300px}
