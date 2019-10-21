@@ -3,8 +3,10 @@ h1, h2, h3, h4, h5, h6{
     font-family: Tahoma, Verdana, sans-serif;
     font-weight: 700;
     font-size-adjust: 0.5; 
-    text-align: center;
+    padding-top: 10px;
+    border-bottom: 1px solid #004c99;
 }
+
 h1, h3, h5{
     font-stretch: expanded;
 }
@@ -15,10 +17,12 @@ h2, h4, h6{
 
 h1{
     font-size: 2em;
+    border-bottom: 1px solid white;
+    padding: 4px;
+    margin-bottom: 0px;
 }
 h2{
     font-size: 1.5em;
-    /*margin-right: 70%;*/
 }
 
 h3{
@@ -52,7 +56,6 @@ h2, h3, h4, h5, h6{
 
 section{
     color: black;
-    background-color: rgb(255, 255, 255);
     text-align: initial;
     text-justify: auto;
     border-color: rgba(0, 102, 204, 0.851);
@@ -64,11 +67,13 @@ section{
 td{
     color: #004c99; 
     background-color: white;
+    padding: 5px;
 }
 
 th{
     color:white;
     background-color: #004c99;
+    padding: 5px;
 }
 
 video{
@@ -147,7 +152,10 @@ body {
     background-color: gray
 }
 
-img {
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
     height: auto;
     align: center;
@@ -157,4 +165,11 @@ img {
 footer {
     background-color: #e8eef7;
     color: #004c99;
+    text-align: initial;
+    text-justify: auto;
+    padding: 10px;
+}
+
+main {
+    background-color: white;
 }
