@@ -58,7 +58,6 @@ section{
     color: black;
     text-align: initial;
     text-justify: auto;
-    border-color: rgba(0, 102, 204, 0.851);
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
@@ -144,12 +143,22 @@ nav a:visited {
 /*------------- Background -------------*/
 
 body { 
+    color: black;
+    text-align: initial;
+    text-justify: auto;
+    padding: 10px;
     background-image: url("multimedia/background.jpg"); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: right;
-    background-color: gray
+    background-color: gray;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header header"
+     "content sidebar"
+     "footer footer"
 }
 
 main img {
@@ -168,8 +177,50 @@ footer {
     text-align: initial;
     text-justify: auto;
     padding: 10px;
+    grid-area: footer;
 }
 
 main {
+    border: 1px solid #004c99;
+    grid-area: content;
     background-color: white;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    background-color: white;
+    grid-area: sidebar;
+    padding: 4px;
+    border: 1px solid #004c99;
+    grid-gap: 0px;
+
+}
+aside h2{
+    border: none;
+    padding-top: 0px;
+    font-style: normal;
+} 
+
+aside ul{
+    list-style-type: none;
+    padding-left: 6px;
+}
+
+aside{
+    line-height: 2em;
+}
+
+aside li a:hover {
+    background-color: #e8eef7;
+    color: #004c99;
+}
+
+aside a:link{
+    text-decoration: none;
+}
+aside a:visited {
+    text-decoration: none;
 }
