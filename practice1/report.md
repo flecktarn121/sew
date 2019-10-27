@@ -39,11 +39,17 @@ A continuación se exponen y explican los resultados de las herramientas de veri
 Los html se han sometido a dicha herramienta, dando todos 0 errores y advertencias, como puede apreciarse en las figuras 1, 2, 3, 4, 5, 6 y 7.
 
 ![Resultado del validador de html del w3c para la página de introducción](pictures/validator.png){height=350px}
+
 ![Resultado del validador de html del w3c para la página de argumento y concepción](pictures/validator2.png){height=350px}
+
 ![Resultado del validador de html del w3c para la página de escenarios](pictures/validator3.png){height=350px}
+
 ![Resultado del validador de html del w3c para la página de música](pictures/validator4.png){height=350px}
+
 ![Resultado del validador de html del w3c para la página de personajes](pictures/validator5.png){height=350px}
+
 ![Resultado del validador de html del w3c para la página de temas](pictures/validator6.png){height=350px}
+
 ![Resultado del validador de html del w3c para la página de temporadas y premios](pictures/validator7.png){height=350px}
 
 ## TAW
