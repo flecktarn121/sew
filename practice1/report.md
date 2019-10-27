@@ -4,7 +4,9 @@ author: "Ángel García Menéndez"
 email: "UO258654@uniovi.es"
 lang: "es-ES"
 ---
+
 # Archivos del proyecto
+
 El proyecto lo componen 7 archivos html:
 
 - index.html: página introductoria donde se explica qué es la serie
@@ -54,7 +56,7 @@ Los html se han sometido a dicha herramienta, dando todos 0 errores y advertenci
 
 ## TAW
 
-Este validador ya arroja un total de 7 advertencias.
+Este validador ya arroja entre 4 y 10 advertencias dependiendo del documento que se analice.
 La mayoría son relacionadas con el contenido, ergo, difíciles de determinar categóricamente por una máquina.
 El informe recomienda su revisión manual, pues no puede por sí misma la herramienta determinar si se cumple o no el criterio.
 Estas son:
@@ -64,26 +66,23 @@ Estas son:
 - Páginas titulas: todas las páginas poseen el título del sitio más uno propio que describe el contenido del documento en particular
 - Encabezado y etiquetas: los encabezados son por sí mismos descriptivos del contenido de la etiqueta que encabezan.
 
-![Resultado de la herramienta TAW](pictures/taw.png){height=250px}
+![Resultado de la herramienta TAW para la página de introducción](pictures/taw.png){height=250px}
 
-## WAVE
+![Resultado de la herramienta TAW para la página de argumento y concepción](pictures/taw2.png){height=250px}
 
-Como puede observarse en la figura 3, esta herramienta también arroja advertencias.
-En este caso están relacionadas con el uso del `tabindex` y los atajos de teclado, dos elementos que son obligatorios para la práctica, y por ende no se puede prescindir de ellos.
+![Resultado de la herramienta TAW para la página de escenarios](pictures/taw3.png){height=250px}
 
-![Resultados de la herramienta WAVE](pictures/wave.png){height=400px}
+![Resultado de la herramienta TAW para la página de música](pictures/taw4.png){height=250px}
 
-## Achecker
+![Resultado de la herramienta TAW para la página de personajes](pictures/taw5.png){height=250px}
 
-En este caso, la herramienta sí arroja un error como tal (ver figura 4).
-Dicho error hace referencia al uso de la etiqueta `<i>`, la cual no se traduce bien a intérpretes textuales.
-Recomiendo el uso de `<strong>` o `<em>`, siendo esta última la que se ha escogido para subsanar el error.
+![Resultado de la herramienta TAW para la página de temas](pictures/taw6.png){height=250px}
 
-![Resultados de la herramienta achecker](pictures/achecker.png){height=400px}
+![Resultado de la herramienta TAW para la página de temporadas y premios](pictures/taw7.png){height=250px}
 
 ## Google Mobile-friendly
 
 Al tratarse de un sitio web con el marcado adecuado y con un CSS muy básico, la página no da ningún problema a la hora de funcionar en un dispositivo móvil.
-La advertencia que se puede apreciar en la figura uno es devida al código del icono del w3c.
+La advertencia que se puede apreciar en la figura uno es debida al código del icono del w3c.
 
 ![Resultados del test de adaptabilidad móvil de Google](pictures/google.png){height=300px}
