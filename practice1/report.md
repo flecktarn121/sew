@@ -56,7 +56,7 @@ Los html se han sometido a dicha herramienta, dando todos 0 errores y advertenci
 
 ## TAW
 
-Este validador ya arroja entre 4 y 10 advertencias dependiendo del documento que se analice.
+Este validador ya arroja entre 4 y 10 advertencias dependiendo del documento que se analice, como se puede apreciar en la figuras 8 a 14.
 La mayoría son relacionadas con el contenido, ergo, difíciles de determinar categóricamente por una máquina.
 El informe recomienda su revisión manual, pues no puede por sí misma la herramienta determinar si se cumple o no el criterio.
 Estas son:
@@ -83,6 +83,20 @@ Estas son:
 ## Google Mobile-friendly
 
 Al tratarse de un sitio web con el marcado adecuado y con un CSS muy básico, la página no da ningún problema a la hora de funcionar en un dispositivo móvil.
-La advertencia que se puede apreciar en la figura uno es debida al código del icono del w3c.
+Puede comprobarse en las figuras 17 a 21.
 
-![Resultados del test de adaptabilidad móvil de Google](pictures/google.png){height=300px}
+![Resultados del test de adaptabilidad móvil de Google para la página de introducción](pictures/google1.png){height=300px}
+
+![Resultados del test de adaptabilidad móvil de Google para la página de argumento](pictures/google2.png){height=300px}
+
+![Resultados del test de adaptabilidad móvil de Google para la página de escenarios](pictures/google3.png){height=300px}
+
+![Resultados del test de adaptabilidad móvil de Google para la página de música](pictures/google4.png){height=300px}
+
+![Resultados del test de adaptabilidad móvil de Google para la página de personajes](pictures/google5.png){height=300px}
+
+![Resultados del test de adaptabilidad móvil de Google para la página de temas](pictures/google6.png){height=300px}
+
+![Resultados del test de adaptabilidad móvil de Google para la página de temporadas y premios](pictures/google7.png){height=300px}
+
+

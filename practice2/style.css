@@ -4,7 +4,6 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700;
     font-size-adjust: 0.5; 
     padding-top: 10px;
-    border-bottom: 1px solid #004c99;
 }
 
 h1, h3, h5{
@@ -18,23 +17,27 @@ h2, h4, h6{
 h1{
     font-size: 2em;
     border-bottom: 1px solid white;
-    padding: 4px;
     margin-bottom: 0px;
 }
 h2{
+    border-bottom: 1px solid #004c99;
     font-size: 1.5em;
 }
 
 h3{
+    border-bottom: 1px solid #004c99;
     font-size: 1.2em;
 }
 h4{
+    border-bottom: 1px solid #004c99;
     font-size: 1em;
 }
 h5{
+    border-bottom: 1px solid #004c99;
     font-size: 0.89em;
 }
 h6{
+    border-bottom: 1px solid #004c99;
     font-size: 0.6em;
 }
 
@@ -56,6 +59,7 @@ h2, h3, h4, h5, h6{
 
 section{
     color: black;
+    background-color: white;
     text-align: initial;
     text-justify: auto;
     padding-left: 10px;
@@ -82,8 +86,6 @@ video{
     padding-bottom: 10px;
     max-width: 100%;
     height: auto;
-    align: center;
-
 }
 
 table, th, td{
@@ -95,16 +97,19 @@ table, th, td{
 /*---------- Enlaces --------------*/
 a:link{
     color: #004c99;
+    background-color: transparent;
     text-decoration: underline dotted;
 }
 
 a:visited {
     color: #004c99;
+    background-color: transparent;
     text-decoration: underline solid;
 }
 /*---------- Menu --------------*/
 nav{
     background-color: #004c99;
+    color: white;
 }
 
 nav ul{
@@ -121,6 +126,7 @@ nav li{
 nav li a{
     display: block;
     color: white;
+    background-color: #004c99;
     text-align: center;
     padding: 16px;
     text-decoration: none;
@@ -131,7 +137,8 @@ nav li a:hover {
     color: #004c99;
 }
 
-nav a:link{
+nav a:link{    
+    background-color: #004c99;
     color: white;
     text-decoration: none;
 }
@@ -139,6 +146,7 @@ nav a:link{
 nav a:visited {
     color: white;
     text-decoration: none;
+    background-color: #004c99;
 }
 /*------------- Background -------------*/
 
@@ -156,9 +164,9 @@ body {
     display: grid;
     grid-gap: 1em;
     grid-template-areas:
-     "header header"
-     "content sidebar"
-     "footer footer"
+    "header header"
+    "content sidebar"
+    "footer footer"
 }
 
 main img {
@@ -167,10 +175,9 @@ main img {
     margin-right: auto;
     max-width: 100%;
     height: auto;
-    align: center;
 }
 
-/*---------- Footer ------------*/
+/*---------- Semantic tags ------------*/
 footer {
     background-color: #e8eef7;
     color: #004c99;
@@ -183,7 +190,6 @@ footer {
 main {
     border: 1px solid #004c99;
     grid-area: content;
-    background-color: white;
 }
 
 header {
@@ -192,6 +198,7 @@ header {
 
 aside {
     background-color: white;
+    color: black;
     grid-area: sidebar;
     padding: 4px;
     border: 1px solid #004c99;
