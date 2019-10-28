@@ -188,6 +188,8 @@ footer {
 }
 
 main {
+    background-color: white;
+    color: black;
     border: 1px solid #004c99;
     grid-area: content;
 }

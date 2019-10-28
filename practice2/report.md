@@ -1,0 +1,71 @@
+---
+title: "Informe de la práctica de CSS"
+author: "Ángel García Menéndez"
+email: "UO258654@uniovi.es"
+lang: "es-ES"
+---
+
+# Estructura general
+
+El sitio web cumple con estructura que se puede apreciar en la figura 1, esto es, un elemento `nav` superior con el título y menú de navegación, un cuerp estrucutrado en dos columnas (la izquierda el contenido y la derecha el `aside`) y un footer al final.
+
+![Estructura general del sitio web](pictures/maqueta.png)
+
+Se emplea una única hoja de estilos, denominada `style.css` para todos los documentos.
+
+# Resultados de las herramientas de comprobación
+
+A continuación se exponen y explican los resultados de las herramientas de verificación, con las capturas de pantalla oportunas.
+
+## Validador del W3C
+
+La hoja de estilos del sitio web fue sometida a la herramienta de validación del W3C, dónde fue necesario corregir algunos aspectos (ausencia de la definición del color de fondo generalmente) para eliminar del todo las advertencias.
+
+![Resultado del validador de css del w3c](pictures/validator.png){height=350px}
+
+## TAW
+
+Este validador ya arroja entre 4 y 10 advertencias dependiendo del documento que se analice, como se puede apreciar en la figuras 8 a 14.
+La mayoría son relacionadas con el contenido, ergo, difíciles de determinar categóricamente por una máquina.
+El informe recomienda su revisión manual, pues no puede por sí misma la herramienta determinar si se cumple o no el criterio.
+Estas son:
+
+- Contenido no textual: se refiere a los vídeos y música, puesto que las imágenes poseen texto alternativo.
+- Información y relaciones: si la información se ve reflejada en la estructura del etiquetado (como así es, por el uso de secciones y otras etiquetas de estructura).
+- Páginas titulas: todas las páginas poseen el título del sitio más uno propio que describe el contenido del documento en particular
+- Encabezado y etiquetas: los encabezados son por sí mismos descriptivos del contenido de la etiqueta que encabezan.
+
+![Resultado de la herramienta TAW para la página de introducción](pictures/taw.png){height=250px}
+
+![Resultado de la herramienta TAW para la página de argumento y concepción](pictures/taw2.png){height=250px}
+
+![Resultado de la herramienta TAW para la página de escenarios](pictures/taw3.png){height=250px}
+
+![Resultado de la herramienta TAW para la página de música](pictures/taw4.png){height=250px}
+
+![Resultado de la herramienta TAW para la página de personajes](pictures/taw5.png){height=250px}
+
+![Resultado de la herramienta TAW para la página de temas](pictures/taw6.png){height=250px}
+
+![Resultado de la herramienta TAW para la página de temporadas y premios](pictures/taw7.png){height=250px}
+
+## Google Mobile-friendly
+
+Al tratarse de un sitio web con el marcado adecuado y con un CSS muy básico, la página no da ningún problema a la hora de funcionar en un dispositivo móvil.
+Puede comprobarse en las figuras 17 a 21.
+
+![Resultados del test de adaptabilidad móvil de Google para la página de introducción](pictures/google1.png){height=300px}
+
+![Resultados del test de adaptabilidad móvil de Google para la página de argumento](pictures/google2.png){height=300px}
+
+![Resultados del test de adaptabilidad móvil de Google para la página de escenarios](pictures/google3.png){height=300px}
+
+![Resultados del test de adaptabilidad móvil de Google para la página de música](pictures/google4.png){height=300px}
+
+![Resultados del test de adaptabilidad móvil de Google para la página de personajes](pictures/google5.png){height=300px}
+
+![Resultados del test de adaptabilidad móvil de Google para la página de temas](pictures/google6.png){height=300px}
+
+![Resultados del test de adaptabilidad móvil de Google para la página de temporadas y premios](pictures/google7.png){height=300px}
+
+
