@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rutas>
+    <ruta nombre="Ruta del basares" tipo="Mixta" recomendation="8">
+        <transporte>Furgoneta</transporte>
+        <fecha>09-11-2018</fecha>
+        <inicio>10:00</inicio>
+        <duracion>6 horas</duracion>
+        <agencia>Ninguna</agencia>
+        <descripcion>Ruta turística por los pueblos a las oillas del rio basares, sus lugares icónicos en cultura y gastronomía</descripcion>
+        <personas_adecuadas>Cualquiera</personas_adecuadas>
+        <partida>Santuario Virgen de la Cabeza</partida>
+        <coordenadas longitude="43.37282969" latitude="-5.74066775" altitude="183"></coordenadas>
+        <references>
+            <reference URL="www.palaciodemeres.com/">Página web del Palacio de Meres</reference>
+            <reference URL="www.caseriasanjuandelobispo.com/">Página web de la Casería San Juan del Obispo</reference>
+            <reference URL="http://restaurantepindeamor.es/">Página web del restaurante Casa Pin</reference>
+
+        </references>
+        <milestones>
+            <milestone name="Santuario Virgen de la Cabeza">
+                <coordenadas longitude="43.37282969" latitude="-5.74066775" altitude="183"></coordenadas>
+                <descripcion>Santuario religioso dedicado a la patrona del pueblo de Meres, la Virgen de la Cabeza.</descripcion>
+                <distance unit="km">0</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/virgen_de_la_cabeza.jpg">Virgen de la Cabeza</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+            <milestone name="Palacio de Meres">
+                <coordenadas longitude="43.377958" latitude="-5.7520596" altitude="197"></coordenadas>
+                <descripcion>Antiguo palacete de hidalgos venidos a menos durante el pasado siglo</descripcion>
+                <distance unit="km">1</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/palacio_meres.jpg">Palacio de Meres</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+            <milestone name="Restaurante Casa Pin">
+                <coordenadas longitude="43.3673117" latitude="-5.7508244" altitude="213"></coordenadas>
+                <descripcion>Excelente restaurante de comida asturiana a precio asequible</descripcion>
+                <distance unit="km">1</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/casa-pin.jpg">Casa Pin</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+        </milestones>
+    </ruta>
+
+    <ruta nombre="Ruta del transiberiano" tipo="Mixta" recomendation="8">
+        <transporte>Tren</transporte>
+        <fecha>09-03-2019</fecha>
+        <inicio>11:30</inicio>
+        <duracion>3 semanas</duracion>
+        <agencia>Ninguna</agencia>
+        <descripcion>Recorrido de la ruta completa del tren Transiberiano: de San Petersburgo a Pyonjang.</descripcion>
+        <personas_adecuadas>Adultos</personas_adecuadas>
+        <partida>Estación Moskovsky</partida>
+        <coordenadas longitude="59.9294918" latitude="30.362119216" altitude="17"></coordenadas>
+        <references>
+            <reference URL="https://www.transsiberianexpress.net/">Página web del ferrocarril</reference>
+            <reference URL="https://www.telegraph.co.uk/travel/rail-journeys/Trans-Siberian-Great-Train-Journeys/">Breve artículo sobre el transiberiano.</reference>
+            <reference URL="https://en.wikivoyage.org/wiki/Trans-Siberian_Railway">Entrada sobre el transiberiano en wikivoyage.</reference>
+
+        </references>
+        <milestones>
+            <milestone name="Palacio de Invierno">
+                <coordenadas longitude="59.9403958" latitude="30.3137962" altitude="15"></coordenadas>
+                <descripcion>Antiguo palacio de los zares rusos.</descripcion>
+                <distance unit="km">2,5</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/palacio-invierno1.jpg">Fachada del palacio</photograph>
+                    <photograph URL="multimedia/fotos/palacio-invierno2.jpg">Frontal del palacio</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+            <milestone name="Palacio del Kremlin">
+                <coordenadas longitude="55.7520233" latitude="37.6174994" altitude="150"></coordenadas>
+                <descripcion>Sede del gobierno ruso.</descripcion>
+                <distance unit="km">348</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/kremlin1.jpg">Vista desde la calle</photograph>
+                    <photograph URL="multimedia/fotos/kremlin2.jpg">Vista desde el rio</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+            <milestone name="Torre Juche">
+                <coordenadas longitude="39.0176961" latitude="125.7635901" altitude="20"></coordenadas>
+                <descripcion>Monumento a la ideología norcoreana.</descripcion>
+                <distance unit="km">9154</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/torrej1.jpg">Intantánea cercana del monumneto</photograph>
+                    <photograph URL="multimedia/fotos/torrej2.jpg">Vista desde el rio</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+        </milestones>
+    </ruta>
+
+
+    <ruta nombre="Sueños por granada" tipo="Mixta" recomendation="10">
+        <transporte>Tren</transporte>
+        <fecha>14-08-2019</fecha>
+        <inicio>08:00</inicio>
+        <duracion>1 día</duracion>
+        <agencia>La Cueva de Morfeo</agencia>
+        <descripcion>Paseos de ensueño por la maravillosa capital de reino nazarí.</descripcion>
+        <personas_adecuadas>Cualquiera</personas_adecuadas>
+        <partida>Paseo de los tristes</partida>
+        <coordenadas longitude="37.1753116" latitude="-3.5980987" altitude="766"></coordenadas>
+        <references>
+            <reference URL="https://www.alhambradegranada.org/">Portal web de la alhambra</reference>
+            <reference URL="http://albayzin.info/">Asociacion de vecinos del Albaicín.</reference>
+            <reference URL="http://www.granadatur.com/">Portal de turismo del ayuntamiento granaino</reference>
+
+        </references>
+        <milestones>
+            <milestone name="Barrio del ALbaicín">
+                <coordenadas longitude="37.1951911" latitude="-3.5795221" altitude="780"></coordenadas>
+                <descripcion>Otrora el barrio morisco de Granda</descripcion>
+                <distance unit="m">100</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/albaicin1.jpg">Vista general del Albaicin</photograph>
+                    <photograph URL="multimedia/fotos/albaicin2.jpg">Detalle del barrio</photograph>
+                    <photograph URL="multimedia/fotos/albaicin3.jpg">El barrio visto desde la alhambra</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+            <milestone name="Alhambra">
+                <coordenadas longitude="37.1744008" latitude="-3.5855393" altitude="796"></coordenadas>
+                <descripcion>Antiguo palacio de los monarcas nazaríes.</descripcion>
+                <distance unit="m">500</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/alhambra1.jpg">Alhambra de Granda</photograph>
+                    <photograph URL="multimedia/fotos/alhambra2.jpg">Patio de los leones</photograph>
+                    <photograph URL="multimedia/fotos/alhambra3.jpg">Jardines de la Alhambra</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+            <milestone name="Catedral de Granda">
+                <coordenadas longitude="43.37282969" latitude="-5.74066775" altitude="183"></coordenadas>
+                <descripcion>Catedral de la ciudad de Granada</descripcion>
+                <distance unit="km">1,2</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/catedral-gran1.jpg">Intantánea cercana del monumneto</photograph>
+                    <photograph URL="multimedia/fotos/catedral-gran2.jpg">Vista desde el rio</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+        </milestones>
+    </ruta>
+
+    <ruta nombre="En busca de la Santina" tipo="Mixta" recomendation="7,5">
+        <transporte>Bus y pie</transporte>
+        <fecha>23-10-2019</fecha>
+        <inicio>09:15</inicio>
+        <duracion>12 horas</duracion>
+        <agencia>Viajes Paco con DNI 1</agencia>
+        <descripcion>Peregrinación al corazón del Principado de Asturias</descripcion>
+        <personas_adecuadas>Jóvenes</personas_adecuadas>
+        <partida>Cangas de Onís</partida>
+        <coordenadas longitude="43.31446165" latitude="-5.06359375" altitude="292"></coordenadas>
+        <references>
+            <reference URL="http://www.lagoscovadonga.com/">Página web del parque natural de los Lagos de Covadonga.</reference>
+            <reference URL="http://www.santuariodecovadonga.com/">Sitio web oficial de santuario de Covadonga</reference>
+            <reference URL="https://www.laaventuradelahistoria.es/batalla-de-covadonga">Historia de la batalla de Covadonga</reference>
+
+        </references>
+        <milestones>
+            <milestone name="Santuario de la Virgen de Covadonga">
+                <coordenadas longitude="43.3082306" latitude="-5.0549489" altitude="257"></coordenadas>
+                <descripcion>Santuario religioso dedicado a la Santina</descripcion>
+                <distance unit="km">11</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/cueva1.jpg">Interior de la cueva del Santuario</photograph>
+                    <photograph URL="multimedia/fotos/cueva2.jpg">Imagen de la Virgen</photograph>
+                    <photograph URL="multimedia/fotos/cueva3.jpg">Instantánea de la fuente de Covadonga</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+            <milestone name="Basílica de Covadonga">
+                <coordenadas longitude="43.3082306" latitude="-5.0549489" altitude="258"></coordenadas>
+                <descripcion>Basílica en honor a la Virgen de Covadonga</descripcion>
+                <distance unit="m">500</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/covadonga1.jpg">Alhambra de Granda</photograph>
+                    <photograph URL="multimedia/fotos/covadonga2.jpg">Patio de los leones</photograph>
+                    <photograph URL="multimedia/fotos/covadonga3.jpg">Jardines de la Alhambra</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+            <milestone name="Lagos de Covadonga">
+                <coordenadas longitude="43.2692465" latitude="-4.98715825" altitude="1073"></coordenadas>
+                <descripcion>Gran espectáculo hidrográfico del paisaje astur.</descripcion>
+                <distance unit="km">7.3</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/lagos1.jpg">Intantánea del paisaje de los lagos</photograph>
+                    <photograph URL="multimedia/fotos/lagos2.jpg">Exquisita fotografía del lugar</photograph>
+                    <photograph URL="multimedia/fotos/lagos3.jpg">Majestuosa imagen de uno de los lagos</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+        </milestones>
+    </ruta>
+
+    <ruta nombre="Ruta de la Regenta" tipo="Mixta" recomendation="7">
+        <transporte>A pie</transporte>
+        <fecha>08-01-2019</fecha>
+        <inicio>10:30</inicio>
+        <duracion>3 horas</duracion>
+        <agencia>Ayuntamiento de Oviedo</agencia>
+        <descripcion>Recorrido por los escenarios de La Regenta en Oviedo.</descripcion>
+        <personas_adecuadas>Mayores</personas_adecuadas>
+        <partida>Convento de las Pelayas</partida>
+        <coordenadas longitude="43.363385" latitude="-5.842423" altitude="205"></coordenadas>
+        <references>
+            <reference URL="http://www.rutaclariniana.es/">Página web de la ruta.</reference>
+            <reference URL="https://es.wikisource.org/wiki/La_Regenta">Texto de La Regenta de Clarín</reference>
+            <reference URL="https://www.turismoasturias.es/descubre/ciudades/oviedo">Portal turístico de Oviedo.</reference>
+
+        </references>
+        <milestones>
+            <milestone name="Convento de las Pelayas">
+                <coordenadas longitude="43.363385" latitude="-5.842423" altitude="205"></coordenadas>
+                <descripcion>Convento de la orden religiosa de las Pelayas.</descripcion>
+                <distance unit="km">0</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/pelayas.jpg">Frontal del convento</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+            <milestone name="Plaza del Fontán">
+                <coordenadas longitude="43.363385" latitude="-5.842423" altitude="201"></coordenadas>
+                <descripcion>Icónica plaza del casco antiguo</descripcion>
+                <distance unit="m">500</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/fontan1.jpg">La plaza un día de fiesta</photograph>
+                    <photograph URL="multimedia/fotos/fontan2.jpg">El Fontán antaño</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+            <milestone name="Catedral de Oviedo">
+                <coordenadas longitude="43.364272" latitude="-5.8433254" altitude="209"></coordenadas>
+                <descripcion>Iglesia dónde tiene cátedra el obispo de Ovideo</descripcion>
+                <distance unit="km">1.1</distance>
+                <photographs>
+                    <photograph URL="multimedia/fotos/cat-oviedo1.jpg">Frontal de la Catedral</photograph>
+                    <photograph URL="multimedia/fotos/cat-oviedo2.jpg">Estatua del personaje de Clarín</photograph>
+                    <photograph URL="multimedia/fotos/cat-oviedo3.jpg">Altar de la catedral</photograph>
+                </photographs>
+                <videos></videos>
+            </milestone>
+
+        </milestones>
+    </ruta>
+
+</rutas>

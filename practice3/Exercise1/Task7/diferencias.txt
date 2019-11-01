@@ -1,0 +1,7 @@
+La diferencia del xsd autogenerado del modificado radican en los tipos usados para los diversos elementos:
+- La recomendación pasa a ser de tipo double.
+- La fecha, como es lógico, pasa a ser de tipo date.
+- La duración aprovecha el tipo de dato duration.
+- Los atributos de las coordenadas son de tipo double.
+- La distancia de un hito a otro estará en tipo double.
+- Los video se han modificado para que puedan no aparecer.
