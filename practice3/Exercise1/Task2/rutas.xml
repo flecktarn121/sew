@@ -23,7 +23,7 @@
                 <descripcion>Santuario religioso dedicado a la patrona del pueblo de Meres, la Virgen de la Cabeza.</descripcion>
                 <distance unit="km">0</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/virgen_de_la_cabeza.jpg">Virgen de la Cabeza</photograph>
+                    <photograph URL="../multimedia/fotos/virgen_de_la_cabeza.jpg">Virgen de la Cabeza</photograph>
                 </photographs>
                 <videos>
                     <video>
@@ -36,7 +36,7 @@
                 <descripcion>Antiguo palacete de hidalgos venidos a menos durante el pasado siglo</descripcion>
                 <distance unit="km">1</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/palacio_meres.jpg">Palacio de Meres</photograph>
+                    <photograph URL="../multimedia/fotos/palacio_meres.jpg">Palacio de Meres</photograph>
                 </photographs>
                 <videos>
                     <video>
@@ -49,7 +49,7 @@
                 <descripcion>Excelente restaurante de comida asturiana a precio asequible</descripcion>
                 <distance unit="km">1</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/casa-pin.jpg">Casa Pin</photograph>
+                    <photograph URL="../multimedia/fotos/casa-pin.jpg">Casa Pin</photograph>
                 </photographs>
                 <videos>
                 <video></video>
@@ -81,8 +81,8 @@
                 <descripcion>Antiguo palacio de los zares rusos.</descripcion>
                 <distance unit="km">2,5</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/palacio-invierno1.jpg">Fachada del palacio</photograph>
-                    <photograph URL="multimedia/fotos/palacio-invierno2.jpg">Frontal del palacio</photograph>
+                    <photograph URL="../multimedia/fotos/palacio-invierno1.jpg">Fachada del palacio</photograph>
+                    <photograph URL="../multimedia/fotos/palacio-invierno2.jpg">Frontal del palacio</photograph>
                 </photographs>
                 <videos>
                 <video></video>
@@ -94,8 +94,8 @@
                 <descripcion>Sede del gobierno ruso.</descripcion>
                 <distance unit="km">348</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/kremlin1.jpg">Vista desde la calle</photograph>
-                    <photograph URL="multimedia/fotos/kremlin2.jpg">Vista desde el rio</photograph>
+                    <photograph URL="../multimedia/fotos/kremlin1.jpg">Vista desde la calle</photograph>
+                    <photograph URL="../multimedia/fotos/kremlin2.jpg">Vista desde el rio</photograph>
                 </photographs>
                 <videos>
                 <video></video>
@@ -107,8 +107,8 @@
                 <descripcion>Monumento a la ideología norcoreana.</descripcion>
                 <distance unit="km">9154</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/torrej1.jpg">Intantánea cercana del monumneto</photograph>
-                    <photograph URL="multimedia/fotos/torrej2.jpg">Vista desde el rio</photograph>
+                    <photograph URL="../multimedia/fotos/torrej1.jpg">Intantánea cercana del monumneto</photograph>
+                    <photograph URL="../multimedia/fotos/torrej2.jpg">Vista desde el rio</photograph>
                 </photographs>
                 <videos>
                 <video></video>
@@ -141,9 +141,9 @@
                 <descripcion>Otrora el barrio morisco de Granda</descripcion>
                 <distance unit="m">100</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/albaicin1.jpg">Vista general del Albaicin</photograph>
-                    <photograph URL="multimedia/fotos/albaicin2.jpg">Detalle del barrio</photograph>
-                    <photograph URL="multimedia/fotos/albaicin3.jpg">El barrio visto desde la alhambra</photograph>
+                    <photograph URL="../multimedia/fotos/albaicin1.jpg">Vista general del Albaicin</photograph>
+                    <photograph URL="../multimedia/fotos/albaicin2.jpg">Detalle del barrio</photograph>
+                    <photograph URL="../multimedia/fotos/albaicin3.jpg">El barrio visto desde la alhambra</photograph>
                 </photographs>
                 <videos>
                 <video></video>
@@ -155,9 +155,9 @@
                 <descripcion>Antiguo palacio de los monarcas nazaríes.</descripcion>
                 <distance unit="m">500</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/alhambra1.jpg">Alhambra de Granda</photograph>
-                    <photograph URL="multimedia/fotos/alhambra2.jpg">Patio de los leones</photograph>
-                    <photograph URL="multimedia/fotos/alhambra3.jpg">Jardines de la Alhambra</photograph>
+                    <photograph URL="../multimedia/fotos/alhambra1.jpg">Alhambra de Granda</photograph>
+                    <photograph URL="../multimedia/fotos/alhambra2.jpg">Patio de los leones</photograph>
+                    <photograph URL="../multimedia/fotos/alhambra3.jpg">Jardines de la Alhambra</photograph>
                 </photographs>
                 <videos>
                 <video></video>
@@ -169,8 +169,8 @@
                 <descripcion>Catedral de la ciudad de Granada</descripcion>
                 <distance unit="km">1,2</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/catedral-gran1.jpg">Intantánea cercana del monumneto</photograph>
-                    <photograph URL="multimedia/fotos/catedral-gran2.jpg">Vista desde el rio</photograph>
+                    <photograph URL="../multimedia/fotos/catedral-gran1.jpg">Intantánea cercana del monumneto</photograph>
+                    <photograph URL="../multimedia/fotos/catedral-gran2.jpg">Vista desde el rio</photograph>
                 </photographs>
                 <videos>
                 <video></video>
@@ -202,9 +202,9 @@
                 <descripcion>Santuario religioso dedicado a la Santina</descripcion>
                 <distance unit="km">11</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/cueva1.jpg">Interior de la cueva del Santuario</photograph>
-                    <photograph URL="multimedia/fotos/cueva2.jpg">Imagen de la Virgen</photograph>
-                    <photograph URL="multimedia/fotos/cueva3.jpg">Instantánea de la fuente de Covadonga</photograph>
+                    <photograph URL="../multimedia/fotos/cueva1.jpg">Interior de la cueva del Santuario</photograph>
+                    <photograph URL="../multimedia/fotos/cueva2.jpg">Imagen de la Virgen</photograph>
+                    <photograph URL="../multimedia/fotos/cueva3.jpg">Instantánea de la fuente de Covadonga</photograph>
                 </photographs>
                 <videos>
                 <video></video>
@@ -216,9 +216,9 @@
                 <descripcion>Basílica en honor a la Virgen de Covadonga</descripcion>
                 <distance unit="m">500</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/covadonga1.jpg">Alhambra de Granda</photograph>
-                    <photograph URL="multimedia/fotos/covadonga2.jpg">Patio de los leones</photograph>
-                    <photograph URL="multimedia/fotos/covadonga3.jpg">Jardines de la Alhambra</photograph>
+                    <photograph URL="../multimedia/fotos/covadonga1.jpg">Alhambra de Granda</photograph>
+                    <photograph URL="../multimedia/fotos/covadonga2.jpg">Patio de los leones</photograph>
+                    <photograph URL="../multimedia/fotos/covadonga3.jpg">Jardines de la Alhambra</photograph>
                 </photographs>
                 <videos>
                 <video></video>
@@ -230,9 +230,9 @@
                 <descripcion>Gran espectáculo hidrográfico del paisaje astur.</descripcion>
                 <distance unit="km">7.3</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/lagos1.jpg">Intantánea del paisaje de los lagos</photograph>
-                    <photograph URL="multimedia/fotos/lagos2.jpg">Exquisita fotografía del lugar</photograph>
-                    <photograph URL="multimedia/fotos/lagos3.jpg">Majestuosa imagen de uno de los lagos</photograph>
+                    <photograph URL="../multimedia/fotos/lagos1.jpg">Intantánea del paisaje de los lagos</photograph>
+                    <photograph URL="../multimedia/fotos/lagos2.jpg">Exquisita fotografía del lugar</photograph>
+                    <photograph URL="../multimedia/fotos/lagos3.jpg">Majestuosa imagen de uno de los lagos</photograph>
                 </photographs>
                 <videos>
                 <video></video>
@@ -264,7 +264,7 @@
                 <descripcion>Convento de la orden religiosa de las Pelayas.</descripcion>
                 <distance unit="km">0</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/pelayas.jpg">Frontal del convento</photograph>
+                    <photograph URL="../multimedia/fotos/pelayas.jpg">Frontal del convento</photograph>
                 </photographs>
                 <videos>
                 <video></video>
@@ -276,8 +276,8 @@
                 <descripcion>Icónica plaza del casco antiguo</descripcion>
                 <distance unit="m">500</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/fontan1.jpg">La plaza un día de fiesta</photograph>
-                    <photograph URL="multimedia/fotos/fontan2.jpg">El Fontán antaño</photograph>
+                    <photograph URL="../multimedia/fotos/fontan1.jpg">La plaza un día de fiesta</photograph>
+                    <photograph URL="../multimedia/fotos/fontan2.jpg">El Fontán antaño</photograph>
                 </photographs>
                 <videos>
                 <video></video>
@@ -289,9 +289,9 @@
                 <descripcion>Iglesia dónde tiene cátedra el obispo de Ovideo</descripcion>
                 <distance unit="km">1.1</distance>
                 <photographs>
-                    <photograph URL="multimedia/fotos/cat-oviedo1.jpg">Frontal de la Catedral</photograph>
-                    <photograph URL="multimedia/fotos/cat-oviedo2.jpg">Estatua del personaje de Clarín</photograph>
-                    <photograph URL="multimedia/fotos/cat-oviedo3.jpg">Altar de la catedral</photograph>
+                    <photograph URL="../multimedia/fotos/cat-oviedo1.jpg">Frontal de la Catedral</photograph>
+                    <photograph URL="../multimedia/fotos/cat-oviedo2.jpg">Estatua del personaje de Clarín</photograph>
+                    <photograph URL="../multimedia/fotos/cat-oviedo3.jpg">Altar de la catedral</photograph>
                 </photographs>
                 <videos>
                 <video></video>
