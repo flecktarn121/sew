@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Placemark id="3">
+            <name>Santuario Virgen de la Cabeza</name>
+            <description>Santuario religioso dedicado a la patrona del pueblo de Meres, la Virgen de la Cabeza.</description>
+            <Point id="2">
+                <coordinates>43.37282969,-5.74066775,183</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="5">
+            <name>Palacio de Meres</name>
+            <description>Antiguo palacete de hidalgos venidos a menos durante el pasado siglo</description>
+            <Point id="4">
+                <coordinates>43.377958,-5.7520596,197</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="7">
+            <name>Restaurante Casa Pin</name>
+            <description>Excelente restaurante de comida asturiana a precio asequible</description>
+            <Point id="6">
+                <coordinates>43.3673117,-5.7508244,213</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
