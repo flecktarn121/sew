@@ -1,7 +1,6 @@
 #!/bin/python
 
 import xml.etree.ElementTree as ET
-import simplekml
 
 def main():
     filename = "rutas.xml"
@@ -83,7 +82,7 @@ def generate_placemark(route, routes, document):
         lon = str(milestone.longitude)
         lat = str(milestone.latitude)
         alt = str(milestone.altitude)
-        coordinates = coordinates + (lon + "," + lat + "," + alt + "\n")
+        coordinates = coordinates + (lat + "," + lon + "," + alt + "\n")
     linestring.append(ET.Element("coordinates"))
     linestring.find("coordinates").text = coordinates
     document.append(placemark)

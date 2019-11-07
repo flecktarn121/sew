@@ -10,8 +10,11 @@
         <end>12:30:00</end>
         <points>
             <point title="Aprobación del acta anterior">
-            <intervention speaker="Ángel García Menéndez">Se aprueba por asentimiento</intervention>
-        </point>
+                <intervention speaker="Ángel García Menéndez">Se aprueba por asentimiento</intervention>
+            </point>
+            <point title="Debate y aprobación de los nuevos presupuestos">
+                <intervention speaker="Ana María García Sánchez"> De acuerdo al borrador presentado, cuantos están dispuestos a aprobarlos.</intervention>
+            </point>
         </points>
     </content>
 </minutes>

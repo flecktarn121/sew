@@ -1,7 +1,6 @@
 #!/bin/python
 
 import xml.etree.ElementTree as ET
-import simplekml
 
 def main():
     filename = "rutas.xml"
@@ -65,13 +64,13 @@ def save_to_svg(route_name, milestones):
     print(route_name)
     max_altitude = calculate_max_height(milestones)
     counter = 10
-    add_point(str(max_altitude), root, polyline, counter, 0, "")
+#    add_point(str(max_altitude), root, polyline, counter, 0, "")
     for milestone in milestones:
-        altitude = str(int(milestone.altitude) + max_altitude)
+        altitude = str(- int(milestone.altitude) )
         add_point(altitude, root, polyline, counter, (0), milestone.name)
         counter += 40
-    add_point(str(max_altitude), root, polyline, counter - 40, 0, "")
-    add_point(str(max_altitude), root, polyline, 10, 0, "")
+#    add_point(str(max_altitude), root, polyline, counter - 40, 0, "")
+#    add_point(str(max_altitude), root, polyline, 10, 0, "")
 
     root.append(polyline)
     ET.ElementTree(root).write(route_name + ".svg", encoding="utf-8", xml_declaration=True)
