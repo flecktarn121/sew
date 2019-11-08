@@ -53,35 +53,32 @@ def save_to_svg(route_name, milestones):
         Args:
             routes (dict): the dictionary of routes and lists of milestones
     '''
+    height = calculate_height(milestones)
+    width = 1000
     root = ET.Element("svg", attrib={
         "xmlns":"http://www.w3.org/2000/svg",
-        "version":"2.0"
+        "version":"2.0",
+        "width":str(width),
+        "height":str(height)
         })
     # Se the name tag
     polyline = ET.Element("polyline", attrib={
         "points":"",
         "style":"fill:white;stroke:red;stroke-width:4"})
-    print(route_name)
-    max_altitude = calculate_max_height(milestones)
     counter = 10
 #    add_point(str(max_altitude), root, polyline, counter, 0, "")
+    root.append(polyline)
     for milestone in milestones:
-        altitude = str(- int(milestone.altitude) )
-        add_point(altitude, root, polyline, counter, (0), milestone.name)
+        altitude = str(height + 200 - int(milestone.altitude))
+        add_point(altitude, root, polyline, counter, (height - 200), milestone.name)
         counter += 40
 #    add_point(str(max_altitude), root, polyline, counter - 40, 0, "")
 #    add_point(str(max_altitude), root, polyline, 10, 0, "")
 
-    root.append(polyline)
     ET.ElementTree(root).write(route_name + ".svg", encoding="utf-8", xml_declaration=True)
 
-def calculate_max_height(milestones):
-    max_altitude = 0
-    for milestone in milestones:
-        if len(milestone.name) > max_altitude:
-            max_altitude = 7 * len(milestone.name)
-    print(max_altitude)
-    return max_altitude
+def calculate_height(milestones):
+    return 1500
 
 def add_point(altitude, root, polyline, x, y, caption):
     # TODO: the altitude will be the difference between the highest point +10 and the altitude of the point 
@@ -91,7 +88,7 @@ def add_point(altitude, root, polyline, x, y, caption):
         "x":str(x),
         "y":str(y),
         "style":"writing-mode: tb; glyph-orientation-vertical: 0;"
-        }) 
+        })
     text.text = caption
     root.append(text)
 
