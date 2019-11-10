@@ -7,6 +7,7 @@
         <html lang="es">
             <head>
                 <title>Rutas</title>
+                <link rel="stylesheet" type="text/css" href="style.css" />
             </head>
             <body>
                 <header>
@@ -58,10 +59,10 @@
             </xsl:template>
 
             <xsl:template match="milestone">
-                <h3><xsl:value-of select="@name"/></h3> 
+                <h3><xsl:value-of select="@name"/></h3>
                 <p><xsl:value-of select="descripcion"/></p>
-                <p>Las coordenadas del hito son (<xsl:value-of select="coordenadas/@longitude"/>, 
-                <xsl:value-of select="coordenadas/@latitude"/>, 
+                <p>Las coordenadas del hito son (<xsl:value-of select="coordenadas/@longitude"/>,
+                <xsl:value-of select="coordenadas/@latitude"/>,
                 <xsl:value-of select="coordenadas/@altitude"/>)
                     , estando a una distancia de <xsl:apply-templates select="distance"/> del punto de partida.</p>
                 <xsl:apply-templates select="photographs"/>

@@ -14,6 +14,15 @@
             </point>
             <point title="Debate y aprobación de los nuevos presupuestos">
                 <intervention speaker="Ana María García Sánchez"> De acuerdo al borrador presentado, cuantos están dispuestos a aprobarlos.</intervention>
+                <vote title="Aprobación del borrador de presupuestos">
+                    <option name="Sí">13</option>
+                    <option name="No">4</option>
+                </vote>
+            </point>
+            <point title="Ruegos y preguntas">
+                <intervention speaker="Ana María Sánchez Sánchez">¿Alguien desea preguntar o exponer algo?</intervention>
+                <intervention speaker="Sofía Rodriguez Martín">Que los presupuestos se escriban empleando LatEx</intervention>
+                <intervention speaker="Ángel García Menéndez">De acuerdo</intervention>
             </point>
         </points>
     </content>
