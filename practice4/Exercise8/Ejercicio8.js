@@ -38,7 +38,7 @@ class MeteorologicalAnalyzer {
                 data += "</section>";
 
                 // Add it to the DOM tree
-                $("main").append(data);
+                $(".main").append(data);
             }).fail(function() {
                 alert("Imposible recuperar los datos");
             });
