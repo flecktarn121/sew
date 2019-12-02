@@ -1,0 +1,2 @@
+El script toma un xml representando el acta de un pleno de la asamblea de centro de la EII, y genera un xhtml para su cómoda lectura.
+Se ha empleado Python 3 para el desarrollo, estanod todas sus dependencias en la biblioteca estándar del lenguaje.
