@@ -1,7 +1,6 @@
 class MeteorologicalAnalyzer {
     constructor(){
-        //var cities = ["Oviedo", "Mieres", "Gijon", "Aviles", "Langreo"];
-        var cities = ["Oviedo"];
+        var cities = ["Oviedo", "Mieres", "Gijon", "Aviles", "Langreo"];
         var that = this;
         // Wait until the document is loaded
         $(document).ready(function() {
@@ -13,32 +12,25 @@ class MeteorologicalAnalyzer {
         cities.forEach(function(city) {
             // Call the API, and then manipulate the processed JSON in the callback
             var apiKey = "47b790fd0fc41878c80c57c9846132cb";
-            var query ="api.openweathermap.org/data/2.5/weather?q=";
+            var query ="https://api.openweathermap.org/data/2.5/weather?q=";
             query += city.toString() + "&units=metric&lang=es&APPID=" + apiKey;
             $.getJSON(query, function(jsonData){
                 // Now we iterate the processed JSON
                 var data = "<section>";
-                for (var info in jsonData.list[0]) {
-                    data += "<h2>" + info.name + "</h2>";
-                    for (var climate in info.weather) {
-                        data += "<p>" + climate.main + "</p>";
-                        data += "<p>" + climate.description + "</p>";
-                    }
-
-                    data += "<ul>"
-                    data += "<li>Temperatura: " + info.main.temp + "ºC ";
-                    data += "(min " + info.main.temp_min + ", max: " + info.main.temp_max + ")</li>";
-                    data += "<li>Humedad: " + info.main.humidity +"%</li>";
-                    data += "<li>Presión: " + info.main.pressure + "Pa</li>";
-                    data += "<li>Nubosidad: " + info.clouds.all + "%</li>";
-                    data += "<li>Lluvias: " + info.rain + "%</li>";
-                    data += "<li>Nieves: " + info.snow + "%</li>";
-                    data += "</ul>";
-                }
+                console.log(jsonData);
+                data += "<h2>" + jsonData.name + "</h2>";
+                data += "<p>" + jsonData.weather[0].description + "</p>";
+                data += "<ul>"
+                data += "<li>Temperatura: " + jsonData.main.temp + "ºC ";
+                data += "(min " + jsonData.main.temp_min + ", max: " + jsonData.main.temp_max + ")</li>";
+                data += "<li>Humedad: " + jsonData.main.humidity +"%</li>";
+                data += "<li>Presión: " + jsonData.main.pressure + "Pa</li>";
+                data += "</ul>";
+                data += "<img src=http://openweathermap.org/img/w/" + jsonData.weather[0].icon + ".png alt=" + jsonData.weather[0].description + ">";
                 data += "</section>";
-
+                console.log(data)
                 // Add it to the DOM tree
-                $(".main").append(data);
+                $("main").append(data);
             }).fail(function() {
                 alert("Imposible recuperar los datos");
             });
