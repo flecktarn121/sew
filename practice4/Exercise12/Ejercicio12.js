@@ -4,8 +4,13 @@ class Geolocalizator {
         this.latitude = null;
         this.longitude = null;
     }
+
     getPosition() {
-        navigator.geolocation.getCurrentPosition(this.display, this.showErrors);
+        if(navigator.geolocation){
+            window.navigator.geolocation.getCurrentPosition(this.display, this.showErrors);
+        } else {
+            alert("El navegador no soporto geolocalización.")
+        }
     }
 
     display(position) {
