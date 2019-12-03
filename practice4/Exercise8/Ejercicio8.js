@@ -12,7 +12,7 @@ class MeteorologicalAnalyzer {
     writeData(cities) {
         cities.forEach(function(city) {
             // Call the API, and then manipulate the processed JSON in the callback
-            var apiKey = "47b790fd0fc41878c80c57c9846132cb";
+            var apiKey = "cbce2ac1b02bdd35a85fb8e44cfc201e";
             var query ="api.openweathermap.org/data/2.5/weather?q=";
             query += city.toString() + "&units=metric&lang=es&APPID=" + apiKey;
             $.getJSON(query, function(jsonData){
