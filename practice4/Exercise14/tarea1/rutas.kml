@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Rutas</name><description>Diversas rutas turisticas</description><Placemark><name>Ruta del basares</name><description /><LineString><extrude>1</extrude><tessellate>1</tessellate><altitudeMode>relativeToSeaFloor</altitudeMode><coordinates>-5.74066775,43.37282969,183
+-5.7520596,43.377958,197
+-5.7508244,43.3673117,213
+</coordinates></LineString></Placemark><Placemark><name>Ruta del transiberiano</name><description /><LineString><extrude>1</extrude><tessellate>1</tessellate><altitudeMode>relativeToSeaFloor</altitudeMode><coordinates>30.3137962,59.9403958,15
+37.6174994,55.7520233,150
+125.7635901,39.0176961,20
+</coordinates></LineString></Placemark><Placemark><name>Sueños por granada</name><description /><LineString><extrude>1</extrude><tessellate>1</tessellate><altitudeMode>relativeToSeaFloor</altitudeMode><coordinates>-3.5795221,37.1951911,780
+-3.5855393,37.1744008,796
+-5.74066775,43.37282969,183
+</coordinates></LineString></Placemark><Placemark><name>En busca de la Santina</name><description /><LineString><extrude>1</extrude><tessellate>1</tessellate><altitudeMode>relativeToSeaFloor</altitudeMode><coordinates>-5.0549489,43.3082306,257
+-5.0549489,43.3082306,258
+-4.98715825,43.2692465,1073
+</coordinates></LineString></Placemark><Placemark><name>Ruta de la Regenta</name><description /><LineString><extrude>1</extrude><tessellate>1</tessellate><altitudeMode>relativeToSeaFloor</altitudeMode><coordinates>-5.842423,43.363385,205
+-5.842423,43.363385,201
+-5.8433254,43.364272,209
+</coordinates></LineString></Placemark></Document></kml>

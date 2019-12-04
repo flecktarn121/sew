@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "Rutas",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Ruta del basares", "description": "", "tessellate": 1, "extrude": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ -5.74066775, 43.37282969 ], [ -5.7520596, 43.377958 ], [ -5.7508244, 43.3673117 ] ] } },
+{ "type": "Feature", "properties": { "Name": "Ruta del transiberiano", "description": "", "tessellate": 1, "extrude": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ 30.3137962, 59.9403958 ], [ 37.6174994, 55.7520233 ], [ 125.7635901, 39.0176961 ] ] } },
+{ "type": "Feature", "properties": { "Name": "Sueños por granada", "description": "", "tessellate": 1, "extrude": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ -3.5795221, 37.1951911 ], [ -3.5855393, 37.1744008 ], [ -5.74066775, 43.37282969 ] ] } },
+{ "type": "Feature", "properties": { "Name": "En busca de la Santina", "description": "", "tessellate": 1, "extrude": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ -5.0549489, 43.3082306 ], [ -5.0549489, 43.3082306 ], [ -4.98715825, 43.2692465 ] ] } },
+{ "type": "Feature", "properties": { "Name": "Ruta de la Regenta", "description": "", "tessellate": 1, "extrude": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ -5.842423, 43.363385 ], [ -5.842423, 43.363385 ], [ -5.8433254, 43.364272 ] ] } }
+]
+}

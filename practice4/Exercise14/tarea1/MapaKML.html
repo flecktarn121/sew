@@ -3,10 +3,19 @@
     <head>
         <meta CHARSET="UTF-8">
         <title>Mapas y archivos</title>
+        <link rel="stylesheet" type="text/css" href="MapaKML.css">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAtch896ABia80LAOvdVoZ6ERhVFcJ5sg&callback=km.initializeMap"></script>
+        <script src="MapaKML.js"></script>
     </head>
     <body>
         <main>
-            <h1>Mapas y archivos</h1>
+            <section>
+                <h1>Mapas y archivos</h1>
+                <p> A continuación se mostrará las rutas correspondientes al KML subido</p>
+                <input id="file" type="file" onchange="km.loadFile();">
+                <div id="map"></div>
+                <div id="capture"></div>
+            </section>
         </main>
     </body>
 </html>
