@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta CHARSET="UTF-8">
+        <title>Title</title>
+        <script src="Ejercicio12.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAtch896ABia80LAOvdVoZ6ERhVFcJ5sg&callback=mm.initializeMap"></script>
+    </head>
+    <body>
+        <main>
+            <h1>Geolocalizador</h1>
+            <p>Sistema de geolocalización.</p>
+            <label for="latitud">Latitud</label>
+            <input id="latitud" type="number">
+            <label for="longitud">Longitud</label>
+            <input id="longitud" type="number">
+            <button id="conseguir" onClick="mm.getPosition();">Obtener mapa</button>
+            <ul id="coordenadas"></ul>
+            <div id="map-canvas"></div>
+        </main>
+    </body>
+</html>
