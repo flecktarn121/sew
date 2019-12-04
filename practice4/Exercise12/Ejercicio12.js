@@ -25,4 +25,6 @@ class Geolocalizator {
         alert("Ha ocurrido un error: " + error.code + " " + error.message);
     }
 }
-var geolocalizator = new Geolocalizator();
+window.addEventListener("load", function() {
+    var geolocalizator = new Geolocalizator();
+});
