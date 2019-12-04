@@ -26,7 +26,7 @@ class FileManager {
     }
 
     displayContent(file) {
-        if (this.type.match(/text.*/)){
+        if (this.type.match(/text.*/) || this.type.match("application/json")) {
             var reader = new FileReader();
             reader.onload = function(x) {
                 document.getElementById("content").innerText = reader.result;
