@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta CHARSET="UTF-8">
+        <title>Calculadora Cientifica</title>
+        <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css"/>
+        <script src="CalculadoraCientifica.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Claculadora básica</h1>
+        </header>
+        <main>
+            <div class="panel">
+                <input id="display" type="text" value="" disabled></input>
+            </div>
+            <div class="buttonrow">
+                <button onClick="calculator.mrc();">mrc</button>
+                <button onClick="calculator.mr();">mr</button>
+                <button onClick="calculator.mrPlus();">m+</button>
+                <button onClick="calculator.mrMinus();">m-</button>
+                <button onClick="calculator.ms();">ms</button>
+            </div>
+            <div class="buttonrow">
+                <button onClick="calculator.square()">x²</button>
+                <button onClick="calculator.power()">xʸ</button>
+                <button onClick="calculator.sin()">sin</button>
+                <button onClick="calculator.cos()">cos</button>
+                <button onClick="calculator.tan()">tan</button>
+            </div>
+            <div class="buttonrow">
+                <button onClick="calculator.sqr()">√</button>
+                <button onClick="calculator.pwr10()">10ˣ</button>
+                <button onClick="calculator.log()">log</button>
+                <button onClick="calculator.exp()">exp</button>
+                <button onClick="calculator.mod()">mod</button>
+            </div>
+            <div class="buttonrow">
+                <button onClick="calculator.arrow()">↑</button>
+                <button onClick="calculator.ce()">CE</button>
+                <button onClick="calculator.clear()">C</button>
+                <button onClick="calculator.del()">DEL</button>
+                <button onClick="calculator.division();">/</button>
+            </div>
+            <div class="buttonrow">
+                <button onClick="calculator.pi()">π</button>
+                <button onClick="calculator.number(7)">7</button>
+                <button onClick="calculator.number(8)">8</button>
+                <button onClick="calculator.number(9)">9</button>
+                <button onClick="calculator.multiplication()">*</button>
+            </div>
+            <div class="buttonrow">
+                <button onClick="calculator.factorial()">n!</button>
+                <button onClick="calculator.number(4)">4</button>
+                <button onClick="calculator.number(5)">5</button>
+                <button onClick="calculator.number(6)">6</button>
+                <button onClick="calculator.substraction()">-</button>
+            </div>
+            <div class="buttonrow">
+                <button onClick="calculator.sign()">±</button>
+                <button onClick="calculator.number(1)">1</button>
+                <button onClick="calculator.number(2)">2</button>
+                <button onClick="calculator.number(3)">3</button>
+                <button onClick="calculator.sum()">+</button>
+            </div>
+            <div class="buttonrow">
+                <button onClick="calculator.leftParenthesis()">(</button>
+                <button onClick="calculator.rightParenthesis()">)</button>
+                <button onClick="calculator.number(0)">0</button>
+                <button onClick="calculator.decimal()">.</button>
+                <button onClick="calculator.equals()">=</button>
+            </div>
+        </main>
+    </body>
+</html>
