@@ -1,31 +1,43 @@
 class CurrencyExchanger {
     constructor(){
         var that = this;
-        // Wait until the document is loaded
-        $(document).ready(function() {
-            that.writeData();
-        });
     }
     writeData() {
+        var ammount = this.getAmmount();
+        if (ammount < 0 || isNaN(ammount)) {
+            alert("Introduzca una cantidad válida");
+            return;
+        }
         // Call the API, and then manipulate the processed JSON in the callback
         var query = "http://data.fixer.io/api/latest?access_key=5711617e09a0eda074eda9afd34f0c87&format=1";
         $.getJSON(query, function(jsonData){
             console.log(jsonData);
             // Now we iterate the processed JSON
-            var data = "<ul>";
-            for (var info in jsonData.list[0]) {
-                data += "<li>Dólares: " + info.rates.USD + "</li>";
-                data += "<li>Rublos: " + info.rates.RUB + "</li>";
-                data += "<li>Yuanes: " + info.rates.CNY + "</li>";
-                data += "<li>Libras esterlinas: " + info.rates.GBP + "</li>";
-                data += "<li>Yenes: " + info.rates.JPY+ "</li>";
-            }
-            data += "</ul>";
+            var data = "";
+                data += "<li>Dólares: " + ammount * jsonData.rates.USD + "</li>";
+                data += "<li>Rublos: " + ammount * jsonData.rates.RUB + "</li>";
+                data += "<li>Yuanes: " + ammount * jsonData.rates.CNY + "</li>";
+                data += "<li>Libras esterlinas: " + ammount * jsonData.rates.GBP + "</li>";
+                data += "<li>Yenes: " + ammount * jsonData.rates.JPY+ "</li>";
 
             // Add it to the DOM tree
-            $(".main").append(data);
+            $(".list").html(data);
         }).fail(function() {
             alert("Imposible recuperar los datos");
         });
     }
+
+    getAmmount() {
+        var ammount = $(".input").val();
+        if (isNaN(ammount)) {
+            return -1;
+        } else {
+            return parseFloat(ammount);
+        }
+    }
 }
+
+var ce;
+window.addEventListener("load", function() {
+    ce = new CurrencyExchanger();
+})

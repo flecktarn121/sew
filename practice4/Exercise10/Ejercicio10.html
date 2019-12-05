@@ -8,9 +8,14 @@
         <script src="Ejercicio10.js"></script>
     </head>
     <body>
-        <main onload="new CurrencyExchanger()">
-            <h1>Cambio de monedas</h1>
-            <p>A continuación se ofrecen los actuales cambios de varios tipos de monedas.</p>
+        <main>
+            <section class="section">
+                <h1>Cambio de monedas</h1>
+                <p>A continuación se ofrecen los actuales cambios de varios tipos de monedas.</p>
+                <input class="input" type="number"></input>
+                <button onClick="ce.writeData();">Cambiar</button>
+                <ul class="list"></ul>
+            </section>
         </main>
     </body>
 </html>
