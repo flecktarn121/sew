@@ -7,43 +7,45 @@
         <script src="CalculadoraBasica.js"></script>
     </head>
     <body>
-        <header>
-            <h1>Claculadora básica</h1>
-        </header>
         <main>
-            <div class="panel">
-                <input id="display" type="text" value="" disabled></input>
-            </div>
-            <div class="buttonrow">
-                <button onClick="calculator.mrc();">mrc</button>
-                <button onClick="calculator.mrPlus();">m+</button>
-                <button onClick="calculator.mrMinus();">m-</button>
-                <button onClick="calculator.division();">/</button>
-            </div>
-            <div class="buttonrow">
-                <button onClick="calculator.number(7)">7</button>
-                <button onClick="calculator.number(8)">8</button>
-                <button onClick="calculator.number(9)">9</button>
-                <button onClick="calculator.multiplication()">*</button>
-            </div>
-            <div class="buttonrow">
-                <button onClick="calculator.number(4)">4</button>
-                <button onClick="calculator.number(5)">5</button>
-                <button onClick="calculator.number(6)">6</button>
-                <button onClick="calculator.substraction()">-</button>
-            </div>
-            <div class="buttonrow">
-                <button onClick="calculator.number(1)">1</button>
-                <button onClick="calculator.number(2)">2</button>
-                <button onClick="calculator.number(3)">3</button>
-                <button onClick="calculator.sum()">+</button>
-            </div>
-            <div class="buttonrow">
-                <button onClick="calculator.number(0)">0</button>
-                <button onClick="calculator.decimal()">.</button>
-                <button onClick="calculator.clear()">C</button>
-                <button onClick="calculator.equals()">=</button>
-            </div>
+            <section>
+                <h1>Claculadora básica</h1>
+                <div class="calc">
+                    <div class="panel">
+                        <input id="display" type="text" value="" disabled></input>
+                    </div>
+                    <div class="buttonrow">
+                        <button onClick="calculator.mrc();">mrc</button>
+                        <button onClick="calculator.mrPlus();">m+</button>
+                        <button onClick="calculator.mrMinus();">m-</button>
+                        <button onClick="calculator.division();">/</button>
+                    </div>
+                    <div class="buttonrow">
+                        <button onClick="calculator.number(7)">7</button>
+                        <button onClick="calculator.number(8)">8</button>
+                        <button onClick="calculator.number(9)">9</button>
+                        <button onClick="calculator.multiplication()">*</button>
+                    </div>
+                    <div class="buttonrow">
+                        <button onClick="calculator.number(4)">4</button>
+                        <button onClick="calculator.number(5)">5</button>
+                        <button onClick="calculator.number(6)">6</button>
+                        <button onClick="calculator.substraction()">-</button>
+                    </div>
+                    <div class="buttonrow">
+                        <button onClick="calculator.number(1)">1</button>
+                        <button onClick="calculator.number(2)">2</button>
+                        <button onClick="calculator.number(3)">3</button>
+                        <button onClick="calculator.sum()">+</button>
+                    </div>
+                    <div class="buttonrow">
+                        <button onClick="calculator.number(0)">0</button>
+                        <button onClick="calculator.decimal()">.</button>
+                        <button onClick="calculator.clear()">C</button>
+                        <button onClick="calculator.equals()">=</button>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>

@@ -377,5 +377,5 @@ class ReversePolishCalculator extends Calculator {
 
 var calculator
 window.addEventListener("load", function() {
-    calculator = new ScientificCalculator();
+    calculator = new ReversePolishCalculator();
 });
