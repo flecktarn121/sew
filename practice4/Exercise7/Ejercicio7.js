@@ -21,27 +21,27 @@ class DomManager {
     }
 
     listarElementos() {
-        var dom = $(":root");
-        var lista ="<ul>";
-        var that = this;
-        dom.children().each(function(){
-            var child = $(this);
-            that.listarElemento($(this), lista);
+        var text = "";
+        $("*", document.body).each(function() {
+            var parentTag = $(this).parent().get(0).tagName;
+            var tag = $(this).get(0).tagName;
+            var value = $(this).get(0).text;
+            text += "Tag del padre: " + parentTag +", tag: " + tag + ", valor: " + value + "\n";
         });
-        console.log(lista)
+        $(".textarea").val(text);
     }
-    listarElemento(elemento, lista) {
-        var padre = elemento.parent().prop("tagName");
-        var tipo = elemento.prop("tagName");
-        var that = this
-        lista += "<li>Padre: " + padre + ", elemento: " + tipo;
-        if(elemento.children.length > 0){
-            elemento.children().each( function(){
-                var child = $(this);
-                that.listarElemento($(this), lista);
-            } )
-        }
-        return lista;
+
+    sumarFilasColumnas() {
+        var cols = 0;
+        var rows = 0;
+
+        // Columns
+        $("#datatable tr th").each(() => cols++ );
+        // Rows
+        $("#datatable * tr").each(() => rows++ );
+
+        var texto = "Filas: " + String(rows) + ", columnas: " + String(cols);
+        $(".tatabla").val(texto);
 
     }
 }

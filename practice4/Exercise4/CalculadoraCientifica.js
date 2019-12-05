@@ -123,12 +123,23 @@ class ScientificCalculator extends Calculator {
             return null;
         }
     }
-    mr() {
-
-    }
 
     ms() {
+        var number = this.getNumber();
+        if (number === null) {
+            this.display("SYNTAX ERROR");
+            this.expression = "";
+        } else {
+            this.register = number;
+        }
+    }
 
+    mc() {
+        this.register = 0;
+    }
+
+    mr() {
+        this.mrc();
     }
 
     square() {
@@ -137,7 +148,7 @@ class ScientificCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
         } else {
-            this.expression = String(Math.pow(number, 1/2));
+            this.expression = String(Math.pow(number, 2));
         }
         this.updateDisplay();
     }
@@ -250,7 +261,24 @@ class ScientificCalculator extends Calculator {
     }
 
     factorial() {
+        var number = this.getNumber();
+        if (number === null) {
+            this.display("SYNTAX ERROR");
+            this.expression = "";
+        } else {
+            var fac = this.calculateFactorial(number);
+            this.expression = String(fac);
+        }
 
+        this.updateDisplay();
+    }
+
+    calculateFactorial(number) {
+        if (number == 0) {
+            return 1;
+        } else {
+            return number * this.calculateFactorial(number - 1);
+        }
     }
 
     sign() {

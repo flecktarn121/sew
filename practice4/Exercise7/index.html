@@ -26,23 +26,30 @@
             </section>
             <section class="tableSection">
                 <h3 class="title3">Título 3</h3>
-                <table class="table">
+                <table id="datatable">
                     <tr class="dataNames">
                         <th class="dataTitle">Dato 1</th>
                         <th class="dataTitle">Dato 2</th>
                         <th class="dataTitle">Dato 3</th>
                     </tr>
                     <tr>
-                        <td class="data">Patata</th>
-                        <td class="data">Somier</th>
-                        <td class="data">Mano</th>
+                        <td class="data">1</th>
+                        <td class="data">2</th>
+                        <td class="data">3</th>
+                    </tr>
+                    <tr>
+                        <td class="data">4</th>
+                        <td class="data">5</th>
+                        <td class="data">6</th>
                     </tr>
                 </table>
-                <button id="tabla">Mostrar/Ocultar</button>
+                <textarea class="tatabla"></textarea>
+                <button id="tabla" onClick="domMan.sumarFilasColumnas();">Sumar filas y columnas</button>
             </section>
             <section>
                 <h2>Contenido del DOM</h2>
                 <p>A continuación se imprimirán los contenidos del DOM</p>
+                <textarea class="textarea"></textarea>
                 <button onClick="domMan.listarElementos()">Listar</button>
             </section>
         </main>
