@@ -110,13 +110,36 @@ class Calculator {
     }
 }
 
-class ScientificCalculator extends Calculator {
+class ReversePolishCalculator extends Calculator {
+
+    constructor() {
+        super();
+        this.stack = [];
+    }
+
+    push() {
+        var input = document.getElementById("display").nodeValue;
+        if (!this.isValidInput(input)) {
+            this.display("SYNTAX ERROR");
+            this.clearStack();
+            this.expression = "";
+        } else {
+            this.stack.push(parseFloat(input));
+        }
+    }
+
+    clearStack() {
+        this.stack = [];
+    }
 
     getNumber() {
-        if(this.isValidInput(this.expression)){
+        var number = stack.pop();
+        if ( isNaN(number)) {
+            return null;
+        }
+        if(this.isValidInput(String(number))){
             try{
-                var result = eval(String(this.expression));
-                return result;
+                return number;
             } catch (e) {
                 this.expression = "";
                 return null;
@@ -150,14 +173,27 @@ class ScientificCalculator extends Calculator {
         if (number === null) {
             this.display("SYNTAX ERROR");
             this.expression = "";
+            this.clearStack();
         } else {
-            this.expression = String(Math.pow(number, 2));
+            var result = Math.pow(number, 2)
+            this.stack.push(result);
+            this.expression = String(result);
         }
         this.updateDisplay();
     }
 
     power() {
-        this.expression += "**";
+        var n1 = this.getNumber();
+        var n2 = this.getNumber();
+        if (n1 === null || n2 === null) {
+            this.display("ERROR");
+            this.expression = "";
+            this.clearStack();
+            return;
+        }
+        var result = Math.pow(n1, n2);
+        this.expression += result;
+        this.stack.push(result);
         this.updateDisplay();
     }
 
@@ -166,8 +202,11 @@ class ScientificCalculator extends Calculator {
         if (number === null) {
             this.display("SYNTAX ERROR");
             this.expression = "";
+            this.clearStack();
         } else {
-            this.expression = String(Math.sin(number));
+            var result = Math.sin(number);
+            this.expression = String(result);
+        this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -177,8 +216,11 @@ class ScientificCalculator extends Calculator {
         if (number === null) {
             this.display("SYNTAX ERROR");
             this.expression = "";
+            this.clearStack();
         } else {
-            this.expression = String(Math.cos(number));
+            var result = Math.cos(number);
+            this.expression = String(result);
+            this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -188,8 +230,11 @@ class ScientificCalculator extends Calculator {
         if (number === null) {
             this.display("SYNTAX ERROR");
             this.expression = "";
+            this.clearStack();
         } else {
-            this.expression = String(Math.tan(number));
+            var result = Math.tan(number);
+            this.expression = String(result);
+            this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -199,8 +244,11 @@ class ScientificCalculator extends Calculator {
         if (number === null) {
             this.display("SYNTAX ERROR");
             this.expression = "";
+            this.clearStack();
         } else {
-            this.expression = String(Math.pow(number, 1/2));
+            var result = Math.pow(number, 1/2);
+            this.expression = String(result);
+            this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -210,8 +258,11 @@ class ScientificCalculator extends Calculator {
         if (number === null) {
             this.display("SYNTAX ERROR");
             this.expression = "";
+            this.clearStack();
         } else {
-            this.expression = String(Math.pow(10, number));
+            var result = Math.pow(10, number);
+            this.expression = String(result);
+            this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -221,8 +272,11 @@ class ScientificCalculator extends Calculator {
         if (number === null) {
             this.display("SYNTAX ERROR");
             this.expression = "";
+            this.clearStack();
         } else {
-            this.expression = String(Math.log(number));
+            var result = Math.log(number);
+            this.expression = String(result);
+            this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -232,14 +286,27 @@ class ScientificCalculator extends Calculator {
         if (number === null) {
             this.display("SYNTAX ERROR");
             this.expression = "";
+            this.clearStack();
         } else {
-            this.expression = String(Math.pow(10, number));
+            var result = Math.pow(10, number);
+            this.expression = String(result);
+            this.stack.push(result);
         }
         this.updateDisplay();
     }
 
     mod() {
-        this.expression += "%";
+        var n1 = this.getNumber();
+        var n2 = this.getNumber();
+        if (n1 === null || n2 === null) {
+            this.display("SYNTAX ERROR");
+            this.expression = "";
+            this.clearStack();
+        } else {
+            var result = n1 % n2;
+            this.expression = String(result);
+            this.stack.push(result);
+        }
         this.updateDisplay();
     }
 
@@ -260,6 +327,7 @@ class ScientificCalculator extends Calculator {
 
     pi() {
         this.expression += String(Math.PI);
+        this.stack.push(Math.PI);
         this.updateDisplay();
     }
 
@@ -268,11 +336,12 @@ class ScientificCalculator extends Calculator {
         if (number === null) {
             this.display("SYNTAX ERROR");
             this.expression = "";
+            this.clearStack();
         } else {
             var fac = this.calculateFactorial(number);
             this.expression = String(fac);
+            this.stack.push(fac);
         }
-
         this.updateDisplay();
     }
 
@@ -289,21 +358,19 @@ class ScientificCalculator extends Calculator {
         if (number === null) {
             this.display("SYNTAX ERROR");
             this.expression = "";
+            this.clearStack();
         } else {
             number = - number;
             this.expression = String(number);
+            this.stack.push(number);
         }
         this.updateDisplay();
     }
 
     leftParenthesis() {
-        this.expression += "(";
-        this.updateDisplay();
     }
 
     rightParenthesis() {
-        this.expression += ")";
-        this.updateDisplay();
     }
 
 }
