@@ -145,7 +145,6 @@ body {
     text-align: initial;
     text-justify: auto;
     padding: 10px;
-    background-image: url("multimedia/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -161,8 +160,10 @@ main img {
     max-width: 100%;
     height: auto;
 }
-
 #map {
-    height: 500px;
-    width: 100%;
+    height: 30em;
+    width: 50em;
+    overflow: hidden;
+    float: left;
+    border: thin solid #333;
 }

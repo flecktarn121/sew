@@ -117,15 +117,85 @@ class ReversePolishCalculator extends Calculator {
         this.stack = [];
     }
 
+    sum() {
+        var n1 = this.getNumber();
+        var n2 = this.getNumber();
+        if (n1 === null || n2 === null) {
+            this.display("SYNTAX ERROR");
+            this.clearStack();
+            this.expression = "";
+            return;
+        } else {
+            var result = n1 + n2;
+            this.expression = String(result);
+        }
+        this.updateDisplay();
+    }
+
+    substraction() {
+        var n1 = this.getNumber();
+        var n2 = this.getNumber();
+        if (n1 === null || n2 === null) {
+            this.display("SYNTAX ERROR");
+            this.clearStack();
+            this.expression = "";
+            return;
+        } else {
+            var result = n1 - n2;
+            this.expression = String(result);
+        }
+        this.expression += "";
+        this.updateDisplay();
+    }
+
+    multiplication() {
+        var n1 = this.getNumber();
+        var n2 = this.getNumber();
+        if (n1 === null || n2 === null) {
+            this.display("SYNTAX ERROR");
+            this.clearStack();
+            this.expression = "";
+            return;
+        } else {
+            var result = n1 * n2;
+            this.expression = String(result);
+        }
+        this.expression += "";
+        this.updateDisplay();
+    }
+
+    division(){
+        var n1 = this.getNumber();
+        var n2 = this.getNumber();
+        if (n1 === null || n2 === null) {
+            this.display("SYNTAX ERROR");
+            this.clearStack();
+            this.expression = "";
+            return;
+        } else {
+            var result = n1 / n2;
+            this.expression = String(result);
+        }
+        this.expression += "";
+        this.updateDisplay();
+    }
+
     push() {
-        var input = document.getElementById("display").nodeValue;
+        var input = this.expression;
+        if (input === "") {
+            return;
+        }
+        console.log(input);
         if (!this.isValidInput(input)) {
             this.display("SYNTAX ERROR");
             this.clearStack();
             this.expression = "";
+            return;
         } else {
             this.stack.push(parseFloat(input));
         }
+        this.expression = "";
+        this.updateDisplay();
     }
 
     clearStack() {
@@ -133,7 +203,7 @@ class ReversePolishCalculator extends Calculator {
     }
 
     getNumber() {
-        var number = stack.pop();
+        var number = this.stack.pop();
         if ( isNaN(number)) {
             return null;
         }
@@ -174,9 +244,9 @@ class ReversePolishCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
             this.clearStack();
+            return;
         } else {
             var result = Math.pow(number, 2)
-            this.stack.push(result);
             this.expression = String(result);
         }
         this.updateDisplay();
@@ -193,7 +263,6 @@ class ReversePolishCalculator extends Calculator {
         }
         var result = Math.pow(n1, n2);
         this.expression += result;
-        this.stack.push(result);
         this.updateDisplay();
     }
 
@@ -203,10 +272,10 @@ class ReversePolishCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
             this.clearStack();
+            return;
         } else {
             var result = Math.sin(number);
             this.expression = String(result);
-        this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -217,10 +286,10 @@ class ReversePolishCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
             this.clearStack();
+            return;
         } else {
             var result = Math.cos(number);
             this.expression = String(result);
-            this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -231,10 +300,10 @@ class ReversePolishCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
             this.clearStack();
+            return;
         } else {
             var result = Math.tan(number);
             this.expression = String(result);
-            this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -245,10 +314,10 @@ class ReversePolishCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
             this.clearStack();
+            return;
         } else {
             var result = Math.pow(number, 1/2);
             this.expression = String(result);
-            this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -259,10 +328,10 @@ class ReversePolishCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
             this.clearStack();
+            return;
         } else {
             var result = Math.pow(10, number);
             this.expression = String(result);
-            this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -273,10 +342,10 @@ class ReversePolishCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
             this.clearStack();
+            return;
         } else {
             var result = Math.log(number);
             this.expression = String(result);
-            this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -287,10 +356,10 @@ class ReversePolishCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
             this.clearStack();
+            return;
         } else {
             var result = Math.pow(10, number);
             this.expression = String(result);
-            this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -302,10 +371,10 @@ class ReversePolishCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
             this.clearStack();
+            return;
         } else {
             var result = n1 % n2;
             this.expression = String(result);
-            this.stack.push(result);
         }
         this.updateDisplay();
     }
@@ -327,7 +396,6 @@ class ReversePolishCalculator extends Calculator {
 
     pi() {
         this.expression += String(Math.PI);
-        this.stack.push(Math.PI);
         this.updateDisplay();
     }
 
@@ -337,10 +405,10 @@ class ReversePolishCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
             this.clearStack();
+            return;
         } else {
             var fac = this.calculateFactorial(number);
             this.expression = String(fac);
-            this.stack.push(fac);
         }
         this.updateDisplay();
     }
@@ -359,10 +427,10 @@ class ReversePolishCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
             this.clearStack();
+            return;
         } else {
             number = - number;
             this.expression = String(number);
-            this.stack.push(number);
         }
         this.updateDisplay();
     }

@@ -4,26 +4,15 @@ class KMLManager {
         this.content;
     }
 
-    loadFile() {
-        var file = document.getElementById("file").files[0];
-        var reader = new FileReader();
-        var content;
-        var _this = this;
-        reader.onload = (x) => _this.displayKML(reader.result);
-        reader.readAsDataURL(file);
-    }
-
-    initializeMap(){
+    initializeMap() {
         var oviedo = {lat: 43.3672702, lng: -5.8502461};
         var mapaOviedo = new google.maps.Map(document.getElementById('map'),{zoom: 8,center:oviedo});
         var marcador = new google.maps.Marker({position:oviedo,map:mapaOviedo});
     }
-    displayKML(kml) {
-        console.log(kml);
-        if (kml == "") {
-            alert("No se ha cargado un archivo KML");
-            return;
-        }
+
+    displayKML() {
+        var kml = "https://raw.githubusercontent.com/flecktarn121/sew/master/practice4/Exercise14/tarea1/rutas.kml";
+
         //kml = 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml';
         var map = new google.maps.Map(document.getElementById('map'), {
             center: new google.maps.LatLng(-19.257753, 146.823688),
