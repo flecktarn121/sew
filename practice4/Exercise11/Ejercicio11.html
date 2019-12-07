@@ -2,18 +2,19 @@
 <html lang="es">
     <head>
         <meta CHARSET="UTF-8">
-        <title>Etiquetado semántico</title>
+        <title>Página de cambio</title>
         <link rel="stylesheet" type="text/css" href="Ejercicio11.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
         <script src="Ejercicio11.js"></script>
     </head>
     <body>
         <main>
-            <section>
-                <h1>Etiquetado semántico de texto</h1>
-                <p>Empleo de la API de Open Calais para etiquetado semántico de texto. El resultado se devuelve en XML-RDF.</p>
-                <button onClick="tagger.tagText()">Conseguir datos</button>
-                <textarea class="textarea"></textarea>
+            <section class="section">
+                <h1>Cambio de cripto monedas</h1>
+                <p>A continuación se ofrecen los actuales cambios de euro a varios tipos de cripto monedas.</p>
+                <input class="input" type="number"></input>
+                <button onClick="cce.writeData();">Cambiar</button>
+                <ul class="list"></ul>
             </section>
         </main>
     </body>

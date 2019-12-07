@@ -92,7 +92,6 @@ class Calculator {
         input = input.replace("(", "");
         input = input.replace(")", "");
         input = input.replace("**", "*");
-        console.log(input);
         var result = /^-?[0-9]+(.[0-9]+)*((\+|\-|\*|\/)-?[0-9]+(.[0-9]+)*)*$/.test(input);
         return result;
     }

@@ -91,7 +91,6 @@ class Calculator {
     isValidInput(input) {
         input = input.replace("(", "");
         input = input.replace(")", "");
-        console.log(input);
         var result = /^-?[0-9]+(.[0-9]+)*((\+|\-|\*|\/)-?[0-9]+(.[0-9]+)*)*$/.test(input);
         return result;
     }
@@ -185,7 +184,6 @@ class ReversePolishCalculator extends Calculator {
         if (input === "") {
             return;
         }
-        console.log(input);
         if (!this.isValidInput(input)) {
             this.display("SYNTAX ERROR");
             this.clearStack();

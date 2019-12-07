@@ -16,7 +16,6 @@ class MeteorologicalAnalyzer {
             query += city.toString() + "&mode=xml&units=metric&lang=es&APPID=" + apiKey;
             $.get(query, function(xmlData){
                 var data = "<section>";
-                console.log(xmlData);
                 // Now we iterate the processed XML using Jquery
                 let $info = $(this);
                 data += "<h2>" + $("city", xmlData.documentElement).attr("name") + "</h2>";

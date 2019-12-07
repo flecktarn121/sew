@@ -17,7 +17,6 @@ class MeteorologicalAnalyzer {
             $.getJSON(query, function(jsonData){
                 // Now we iterate the processed JSON
                 var data = "<section>";
-                console.log(jsonData);
                 data += "<h2>" + jsonData.name + "</h2>";
                 data += "<p>" + jsonData.weather[0].description + "</p>";
                 data += "<ul>"
@@ -28,7 +27,6 @@ class MeteorologicalAnalyzer {
                 data += "</ul>";
                 data += "<img src=http://openweathermap.org/img/w/" + jsonData.weather[0].icon + ".png alt=" + jsonData.weather[0].description + ">";
                 data += "</section>";
-                console.log(data)
                 // Add it to the DOM tree
                 $("main").append(data);
             }).fail(function() {

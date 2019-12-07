@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta CHARSET="UTF-8">
+        <title>Tres en ralla</title>
+        <link rel="stylesheet" type="text/css" href="Ejercicio6.css">
+        <script src="Ejercicio6.js"></script>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Tres en ralla</h1>
+                <p>A continuación se exponen una serie de datos de índole metreorológica sobre rutas turísticas.</p>
+                <ul>
+                </ul>
+                <div class="row">
+                    <button id="btn0" onClick="ttt.play(0, 0, '0');"></button>
+                    <button id="btn1" onClick="ttt.play(0, 1, '1');"></button>
+                    <button id="btn2" onClick="ttt.play(0, 2, '2')"></button>
+                </div>
+                <div class="row">
+                    <button id="btn3" onClick="ttt.play(1, 0, '3')"></button>
+                    <button id="btn4" onClick="ttt.play(1, 1, '4')"></button>
+                    <button id="btn5" onClick="ttt.play(1, 2, '5')"></button>
+                </div>
+                <div class="row">
+                    <button id="btn6" onClick="ttt.play(2, 0, '6')"></button>
+                    <button id="btn7" onClick="ttt.play(2, 1, '7')"></button>
+                    <button id="btn8" onClick="ttt.play(2, 2, '8')"></button>
+                </div>
+                <button id="restart" disabled="true" onClick="ttt.restart();">Jugar otra vez</button>
+            </section>
+        </main>
+    </body>
+</html>

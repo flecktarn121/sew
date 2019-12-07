@@ -10,7 +10,12 @@
     <body>
         <main>
             <h1>Geolocalizador</h1>
-            <p>Situación actual de los restos de Francisco Franco.</p>
+            <p>Sistema de geolocalización. Cargue un mapa dinámico de la latitud y longitud especificadas.</p>
+            <label for="latitud">Latitud</label>
+            <input id="latitud" type="number">
+            <label for="longitud">Longitud</label>
+            <input id="longitud" type="number">
+            <button id="conseguir" onClick="mm.getPosition();">Obtener mapa</button>
             <div id="map-canvas"></div>
         </main>
     </body>

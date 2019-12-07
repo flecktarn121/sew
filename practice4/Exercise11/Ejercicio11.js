@@ -1,40 +1,42 @@
-class SemanticTagger{
+class CryptoCurrencyExchanger {
     constructor(){
+        var that = this;
+    }
+    writeData() {
+        var ammount = this.getAmmount();
+        if (ammount < 0 || isNaN(ammount)) {
+            alert("Introduzca una cantidad válida");
+            return;
+        }
+        // Call the API, and then manipulate the processed JSON in the callback
+        var query = "http://api.coinlayer.com/api/live?access_key=34901650c64e2847ae2b888f25fbab7e";
+        $.getJSON(query, function(jsonData){
+            // Now we iterate the processed JSON
+            var data = "";
+                data += "<li>Bitcoin: " + ammount * jsonData.rates.BTC + "</li>";
+                data += "<li>Ethereum: " + ammount * jsonData.rates.ETH + "</li>";
+                data += "<li>BitShares: " + ammount * jsonData.rates.BTS + "</li>";
+                data += "<li>EOS: " + ammount * jsonData.rates.EOS + "</li>";
+                data += "<li>Ripple: " + ammount * jsonData.rates.XRP + "</li>";
+
+            // Add it to the DOM tree
+            $(".list").html(data);
+        }).fail(function() {
+            alert("Imposible recuperar los datos");
+        });
     }
 
-    readText() {
-        var text = "";
-        text = $(".textarea").text;
-        return text;
-    }
-
-    tagText() {
-        var text = this.readText();
-        var apiKey = "G4lsJP5Z6FPEDTsm3a480p3aFwGvnUm0";
-        var url = "https://api.thomsonreuters.com/permid/calais";
-        var _this = this;
-        $.ajax({
-            url: "https://api.thomsonreuters.com/permid/calais",
-            type: "post",
-            data: text,
-            headers:{
-                "Content-Type":"text/raw",
-                "x-ag-access-token":apiKey
-            }
-        }).then(_this.processFile);
-    }
-
-    processFile(data, result) {
-        if (result === "success") {
-            console.log(data);
+    getAmmount() {
+        var ammount = $(".input").val();
+        if (isNaN(ammount)) {
+            return -1;
         } else {
-            alert("Ha ocurrido un error con el servicio.");
+            return parseFloat(ammount);
         }
     }
 }
 
-var tagger;
-
+var ce;
 window.addEventListener("load", function() {
-    tagger = new SemanticTagger();
-});
+    cce = new CryptoCurrencyExchanger();
+})
