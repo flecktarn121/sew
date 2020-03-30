@@ -233,7 +233,7 @@ class ScientificCalculator extends Calculator {
             this.display("SYNTAX ERROR");
             this.expression = "";
         } else {
-            this.expression = String(Math.pow(10, number));
+            this.expression = String(Math.pow(number, 10));
         }
         this.updateDisplay();
     }
