@@ -233,24 +233,40 @@ aside a:link{
 aside a:visited {
     text-decoration: none;
 }
- /*---------Galeria---------*/
+/*---------Galeria---------*/
 div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+    border: 1px solid #777;
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 div.desc {
-  padding: 15px;
-  text-align: center;
+    padding: 15px;
+    text-align: center;
+}
+
+/*---------SVG---------*/
+rect {
+    fill:#004c99 ; /* changes the background */
+    transition: fill .3s ease;
+}
+rect:hover,
+rect:focus {
+    fill: #e8eef7;
+    stroke:#004c99;
+    stroke-width:1;
+}
+text:hover text,
+text:focus text {
+    fill: #e8eef7;
 }
