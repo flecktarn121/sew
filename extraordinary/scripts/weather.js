@@ -8,7 +8,9 @@ class MeteorologicalAnalyzer {
         $.getJSON(query, function(jsonData){
             // Now we iterate the processed JSON
             let data = "<h2>El tiempo</h2>";
-            data += "<p>" + jsonData.weather[0].description + "</p>";
+            data += "<p>La situación meteorológica actual en la zona del centro es: <strong>"
+                + jsonData.weather[0].description
+                + "</strong></p>";
             data += "<ul>"
             data += "<li>Temperatura: " + jsonData.main.temp + "ºC ";
             data += "(min " + jsonData.main.temp_min + ", max: " + jsonData.main.temp_max + ")</li>";

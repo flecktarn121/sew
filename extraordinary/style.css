@@ -205,21 +205,20 @@ aside {
     padding: 4px;
     border: 1px solid #004c99;
     grid-gap: 0px;
-
+    line-height: 2em;
+    max-width: 20em;
 }
+
+aside img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 aside h2{
     border: none;
     padding-top: 0px;
     font-style: normal;
-}
-
-aside ul{
-    list-style-type: none;
-    padding-left: 6px;
-}
-
-aside{
-    line-height: 2em;
 }
 
 aside li a:hover {
@@ -227,12 +226,6 @@ aside li a:hover {
     color: #004c99;
 }
 
-aside a:link{
-    text-decoration: none;
-}
-aside a:visited {
-    text-decoration: none;
-}
 /*---------Galeria---------*/
 div.gallery {
     margin: 5px;
