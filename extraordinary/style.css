@@ -166,7 +166,7 @@ body {
     grid-template-areas:
     "header header"
     "content sidebar"
-    "footer footer"
+    "footer footer";
 }
 
 main img {
@@ -281,3 +281,4 @@ text:focus text {
     height: 500px;
     width: 100%;
 }
+
