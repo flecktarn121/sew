@@ -7,9 +7,8 @@
         <meta name="description" content="Página web del Instituto de Enseñanza Secundaria Rio Nora">
         <meta name="keywords" content="instituto, educación, Nora, Siero">
         <meta name="author" content="Ángel García Menéndez">
-        <base href="https://flecktarn121.github.io/sew/extraordinary/">
         <script src="scripts/map.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAtch896ABia80LAOvdVoZ6ERhVFcJ5sg&callback=mapGenerator.initializeMap"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAtch896ABia80LAOvdVoZ6ERhVFcJ5sg&callback=mm.initializeMap"></script>
     </head>
     <body>
         <header>
@@ -52,6 +51,13 @@
 
                 <p>Por último, para dar cabida a los alumnos del primer ciclo de la ESO que se incorporan en el curso 2002-2003, en el verano del 2002 comienza una nueva ampliación con la creación de seis aulas ordinarias y un aula-taller.</p>
 
+            </section>
+
+            <section>
+                <h3>Localización del centro</h3>
+                <p>A continuación se ofrece un mapa interactivo para poder localizar el centro con respecto a su ubicación.</p>
+                <button id="conseguir" onClick="mm.initializeMap();">Generar ruta</button>
+                <div id="map-canvas"></div>
             </section>
 
             <section>
@@ -108,12 +114,6 @@
                     </a>
                     <div class="desc">Taller de tecnología del centro</div>
                 </div>
-            </section>
-            <section>
-                <h3>Localización del centro</h3>
-                <p>A continuación se ofrece un mapa interactivo para poder localizar el centro con respecto a su ubicación.</p>
-
-                <div id="map"></div>
             </section>
         </main>
         <footer>
