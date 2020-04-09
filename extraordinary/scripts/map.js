@@ -27,12 +27,6 @@ class MapManager{
                     window.alert(err.message);
                 });
     }
-
-    generateRoute(){
-        let directionsService = new google.maps.DirectionsService();
-        let directionsRenderer = new google.maps.DirectionsRenderer();
-    }
-
 }
 
 
