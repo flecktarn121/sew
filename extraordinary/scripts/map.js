@@ -1,11 +1,6 @@
 class MapManager{
 
     initializeMap(){
-        window.navigator.geolocation.getCurrentPosition(
-            (pos) => alert(pos.coords),
-            (err) => alert(err.message)
-        );
-        /*
         var directionsService = new google.maps.DirectionsService();
         var directionsRenderer = new google.maps.DirectionsRenderer();
         var map = new google.maps.Map(document.getElementById('map-canvas'), {
@@ -31,7 +26,6 @@ class MapManager{
                 function(err) {
                     window.alert(err.message);
                 });
-                */
     }
 }
 
