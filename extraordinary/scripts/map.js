@@ -1,13 +1,13 @@
 class MapManager {
-    constructor(){
+    constructor() {
         this._this = this;
     }
 
 
-    initializeMap(){
-        var directionsService = new google.maps.DirectionsService();
-        var directionsRenderer = new google.maps.DirectionsRenderer();
-        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    initializeMap() {
+        let directionsService = new google.maps.DirectionsService();
+        let directionsRenderer = new google.maps.DirectionsRenderer();
+        let map = new google.maps.Map(document.getElementById('map-canvas'), {
             zoom: 7,
             center: {lat: 43.389139, lng: -5.659215}
         });
@@ -34,4 +34,4 @@ class MapManager {
     }
 }
 
-var mm = new MapManager();
+let mm = new MapManager();

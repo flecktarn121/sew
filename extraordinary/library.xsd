@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.uniovi.es"
+    xmlns="http://www.uniovi.es"
+    elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="library">
+    <xs:complexType>
+        <xs:choice minOccurs="1" maxOccurs="unbounded">
+            <xs:element name="book">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="title" nillable="true" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:string">
+                                        <xs:attribute name="original" type="xs:string" />
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="date" type="xs:date" minOccurs="1"/>
+                        <xs:element name="quantity" type="xs:integer" minOccurs="1"/>
+                        <xs:element name="author" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="name" type="xs:string" minOccurs="1" />
+                                    <xs:element name="birth" type="xs:date" minOccurs="1" />
+                                    <xs:element name="death" minOccurs="0">
+                                        <xs:simpleType>
+                                            <xs:union>
+                                                <xs:simpleType>
+                                                    <xs:restriction base='xs:string'>
+                                                        <xs:length value="0"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                                <xs:simpleType>
+                                                    <xs:restriction base='xs:date' />
+                                                </xs:simpleType>
+                                            </xs:union>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="photo" type="xs:string" minOccurs="1" />
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="description" type="xs:string" minOccurs="0"/>
+                        <xs:element name="cover" type="xs:string" minOccurs="0"/>
+                        <xs:element name="adquisition" type="xs:string" minOccurs="1"/>
+                        <xs:element name="adaptations" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="adaptation" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="title" type="xs:string" minOccurs="1"/>
+                                                <xs:element name="date" type="xs:date" minOccurs="1"/>
+                                                <xs:element name="description" type="xs:string" minOccurs="1"/>
+                                            </xs:sequence>
+                                            <xs:attribute name="media" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction>
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="tv"/>
+                                                                <xs:enumeration value="cinema"/>
+                                                                <xs:enumeration value="comic"/>
+                                                                <xs:enumeration value="theatre"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="avaliable" type="xs:boolean" />
+                    <xs:attribute name="isbn" type="xs:string" />
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.uniovi.es"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.uniovi.es library.xsd">
+    <book avaliable='true' isbn='978-84-670-3343-4'>
+        <title original='someir'>Luces de Bohemia</title>
+        <date>1920-07-31</date>
+        <quantity>8</quantity>
+        <author>
+            <name>Ramón María del Valle Inclán</name>
+            <birth>1866-03-10</birth>
+            <death>1936-05-01</death>
+            <photo>valle.jpg</photo>
+        </author>
+        <description>Máximo exponente del esperpento, género teatral desarrollado por su autor, dónde se pone de manifiesto la irrealidad y lo trágicamente cómico del MAdrid de los años veinte.</description>
+        <cover>bohemian_lights.jpg</cover>
+        <adquisition>2006-5-23</adquisition>
+        <adaptations>
+            <adaptation media='cinema'>
+                <title>Luces de Bohemia</title>
+                <date>1985-04-18</date>
+                <description>Adaptación de la obra teatral del mismo nombre del autor gallego Ramón María del Valle Inclán.</description>
+            </adaptation>
+        </adaptations>
+    </book>
+    <book avaliable='false' isbn=''>
+        <title original='Das Kapital'>El Capital</title>
+        <date>1867-11-22</date>
+        <quantity>2</quantity>
+        <author>
+            <name>Carlos Marx</name>
+            <birth>1818-05-05</birth>
+            <death>1883-03-14</death>
+            <photo>marx.jpg</photo>
+        </author>
+        <description>Análisis y crítca del capitalismo por parte del padre del socialismo científico.</description>
+        <cover></cover>
+        <adquisition>2016-8-3</adquisition>
+        <adaptations>
+            <adaptation media='comic'>
+                <title>El Capital: el manga</title>
+                <date>2008-01-24</date>
+                <description>Adaptación estilo Manga de la obra magna de Karl Marx.</description>
+            </adaptation>
+        </adaptations>
+    </book>
+    <book avaliable='true' isbn='978-84-344-4470-6'>
+        <title original='Ética para Amador'>Ética para Amador</title>
+        <date>1991-01-26</date>
+        <quantity>13</quantity>
+        <author>
+            <name>Fernando Savater</name>
+            <birth>1947-06-21</birth>
+            <death></death>
+            <photo>savater.jpg</photo>
+        </author>
+        <description>Ensayo del famoso filósofo vasco, en forma de diálogo con su hijo, sobre el campo de la ética.</description>
+        <cover>amador.jpg</cover>
+        <adquisition>2002-12-20</adquisition>
+        <adaptations>
+        </adaptations>
+    </book>
+    <book avaliable='true' isbn='978-84-15083-87-0'>
+        <title original='Война и мир'>Guerra y Paz</title>
+        <date>1869-06-08</date>
+        <quantity>4</quantity>
+        <author>
+            <name>León Tólstoi</name>
+            <birth>1828-08-28</birth>
+            <death>1910-11-20</death>
+            <photo>tolstoi.jpg</photo>
+        </author>
+        <description>Novela insignia de uno de los maestros de la literatura rusa, sobre la naturaleza de la guerra y los engranajes de la historia.</description>
+        <cover>boinaimir.jpg</cover>
+        <adquisition>2010-03-24</adquisition>
+        <adaptations>
+            <adaptation media='cinema'>
+                <title>Guerra y Paz</title>
+                <date>1956-08-21</date>
+                <description>Versión cinematográfica de la obra de León Tolstoi filmada en la antigua Unión Soviética y aclamada por la crítica.</description>
+            </adaptation>
+            <adaptation media='tv'>
+                <title>War and Peace</title>
+                <date>1972-09-28</date>
+                <description>Serie de televisión producida por la BBC basada en la obra del autor ruso.</description>
+            </adaptation>
+        </adaptations>
+    </book>
+    <book avaliable='true' isbn='978-84-98386-56-1'>
+        <title original='Harry Potter and the Sourcerers Stone'>Harry Potter y la Piedra Filosofal</title>
+        <date>1997-06-26</date>
+        <quantity>5</quantity>
+        <author>
+            <name>J. K. Rowling</name>
+            <birth>1965-07-31</birth>
+            <death></death>
+            <photo>jk.jpg</photo>
+        </author>
+        <description></description>
+        <cover>potter.jpg</cover>
+        <adquisition>2013-10-20</adquisition>
+        <adaptations>
+            <adaptation media='cinema'>
+                <title>Harry Potter y la Piedra Filosofal</title>
+                <date>2001-11-04</date>
+                <description>La primera de las historias de Harry y sus amigos magos, llevada a la gran pantalla</description>
+            </adaptation>
+        </adaptations>
+    </book>
+</library>

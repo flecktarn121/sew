@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{parskip}
+\usepackage[colorlinks=true,urlcolor=Blue,linkcolor=black,citecolor=black]{hyperref}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{fancyhdr}
+\usepackage{csquotes}
+\usepackage{lastpage}
+\usepackage{array}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage[hmargin=2cm,top=4cm,headheight=65pt,footskip=65pt]{geometry}
+
+
+\graphicspath{{./pics/}}
+
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[CE,CO,LE,LO,RE,RO]{} %% clear out all headers
+\fancyhead[C]{%
+    \begin{tabular}{|m{4.5cm}|m{8.0cm}|m{4.5cm}|}
+        \hline
+        \includegraphics[width=4.8cm]{logo2.png} &
+        \centering
+        \Large{Informe de la práctica} &
+        \centering
+        \normalsize{Página \thepage\ de \pageref{LastPage}}\tabularnewline
+        \hline
+    \end{tabular}%
+    }
+    \fancyfoot[CE,CO,LE,LO,RE,RO]{} %% clear out all footers
+    %\fancyfoot[RE,LO]{}
+    %\fancyfoot[LE,RO]{}
+    \fancyfoot[C]{%
+        \begin{tabular}{|m{7.5cm}|m{3.5cm}|m{6cm}|}
+            \hline
+            \normalsize{\textbf{Redactor:} Ángel García Menéndez}&
+            \centering
+            \normalsize{\textbf{Fecha:}\\24 de mayo de 2020} &
+            \normalsize{\textit{Software y Estándares para la Web}}\tabularnewline
+            \hline
+        \end{tabular}%
+        }
+
+        \title{Informe de la práctica}
+        \author{Ángel García Menéndez}
+        \date{24 de mayo de 2020}
+
+        \begin{document}
+
+        \begin{titlepage}
+            \centering
+            \includegraphics[width=0.25\textwidth]{logo}\par\vspace{1cm}
+            {\scshape\LARGE Escuela de Ingeniería Informática de Oviedo\par}
+            \vspace{1cm}
+            {\scshape\Large Software y Estándares para Web\par}
+            \vspace{1.5cm}
+            {\huge\bfseries Informe de la práctica\par}
+            \vspace{2cm}
+            {\Large\itshape Ángel García Menéndez\par}
+            \vfill
+            Evaluación extraordinaria
+
+            \vfill
+
+            % Bottom of the page
+            {\large Curso 2019/2020\par}
+        \end{titlepage}
+
+        \tableofcontents
+        \newpage
+        \section{Introducctión}\label{intro}
+        bla bla bla
+
+    \end{document}

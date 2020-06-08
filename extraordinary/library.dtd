@@ -1,0 +1,21 @@
+<!ELEMENT  library (book+)>
+<!ELEMENT book (title, date, quantity, author, description, cover, adquisition, adaptations)>
+<!ATTLIST book avaliable CDATA #REQUIRED>
+<!ATTLIST book isbn CDATA #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title original CDATA "">
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT author (name, birth, death, photo)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT birth (#PCDATA)>
+<!ELEMENT death (#PCDATA|EMPTY)*>
+<!ELEMENT photo (#PCDATA)>
+<!ELEMENT adaptations (adaptation*)>
+<!ELEMENT adaptation (title, date, description)>
+<!ATTLIST adaptation media (cinema|tv|play|videogame|comic) #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT description (#PCDATA|EMPTY)*>
+<!ELEMENT cover (#PCDATA|EMPTY)*>
+<!ELEMENT adquisition (#PCDATA)>
