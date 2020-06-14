@@ -42,16 +42,16 @@ h6{
 }
 
 /*--------Texto------*/
+h1{
+    color: white;
+    background-color: #004c99;
+}
 p, li,td{
     font-family: Tahoma, Verdana, sans-serif;
     font-size: initial
 }
 
 /*---------Color--------*/
-h1  {
-    color: white;
-    background-color: #004c99;
-}
 h2, h3, h4, h5, h6{
     color: #004c99;
     background-color: white;
