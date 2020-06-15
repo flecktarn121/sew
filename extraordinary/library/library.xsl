@@ -16,7 +16,7 @@
             </head>
             <body>
                 <header>
-                    <img src="../img/logo.jpg" alt="Logo del instituto"/>
+                    <img src="img/logo.jpg" alt="Logo del instituto"/>
                     <h1>Instituto de enseñanza secundaria Rio Nora</h1>
                     <nav>
                         <ul>
@@ -78,7 +78,7 @@
     </xsl:template>
 
     <xsl:template match="cover">
-        <img src="../img/{.}" alt="cubierta del libro"/>
+        <img src="img/{.}" alt="cubierta del libro"/>
     </xsl:template>
 
     <xsl:template match="adaptations">
@@ -96,7 +96,7 @@
             </ul>
         </xsl:template>
         <xsl:template match="photo">
-            <a href="../img/{.}">Fotografía del autor</a>
+            <a href="img/{.}">Fotografía del autor</a>
         </xsl:template>
 
         <xsl:template match="adaptation">
